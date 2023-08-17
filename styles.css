@@ -37,7 +37,7 @@ header {
 }
 
 .logo:hover {
-  color: red; /* Change the color on hover */
+  color: purple; /* Change the color on hover */
   transform: scale(1.05); /* Add hover effect */
 }
 
@@ -113,12 +113,12 @@ footer {
 
 /* Footer link hover effect */
 .social-links a:hover {
-  color: red; /* Change the color on hover */
+  color: purple; /* Change the color on hover */
 }
 
 /* Navigation link hover effect */
 .nav-links a:hover {
-  color: red;
+  color: purple;
   transform: scale(1.05);
 }
 
