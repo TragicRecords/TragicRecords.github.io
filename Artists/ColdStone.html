@@ -3,97 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ColdStone - Artist Page</title>
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    /* Reset margin and padding for the whole page */
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Rest of your styles ... */
-
-    .background-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.5; /* Adjust the opacity as needed */
-    }
-
-    .artist {
-      /* Your artist section styles ... */
-      position: relative;
-      z-index: 1;
-    }
-
-    .social-icons {
-      margin-top: 10px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      width: 70px; /* Set the width for all icons */
-      height: 70px; /* Set the height for all icons */
-      margin-right: 20px; /* Adjust spacing between icons */
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    /* Adjust the background images for each icon */
-    .social-icons a.youtube {
-      background-image: url("../Assets/Logos/youtube.png");
-    }
-
-    .social-icons a.instagram {
-      background-image: url("../Assets/Logos/instagram.png");
-    }
-
-    .social-icons a.spotify {
-      background-image: url("../Assets/Logos/Spotify.png");
-    }
-
-    .social-icons a.apple-music {
-      background-image: url("../Assets/Logos/Apple Music.png");
-    }
-
-    .social-icons a.soundcloud {
-      background-image: url("../Assets/Logos/SoundCloud.png");
-    }
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../Styles/ColdStone-style.css"> <!-- Link to your external stylesheet -->
+  <link rel="shortcut icon" type="icon" href="../Assets/Logos/ColdStone.jpg">
+  <title>ColdStone - Artist</title>
 </head>
-<body>
-  <video class="background-video" autoplay loop muted>
-    <source src="../Assets/Videos/BGVideo" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
-
-  <header>
-	<a href="../index.html">Back to Homepage</a>
-</section>
-  </header>
-  
-  <section class="artist">
-    <h1>ColdStone</h1>
-    <p class="description">FMTS CEO • Beat Producer • Artist</p>
-    <p class="description">"Take My Soul, I don't need it."</p>
-    
-    <div class="social-icons">
-      <a class="youtube" href="https://www.youtube.com/channel/UCRVnUjZaG08JzBlvMxjq7VA"></a>
-      <a class="instagram" href="https://www.instagram.com/mindsotragic/?igshid=YmMyMTA2M2Y%3D"></a>
-      <a class="spotify" href="https://open.spotify.com/artist/14u2HBia7beSu0gM7KjBJv?si=JZwqb5QVQAOsOW-Eix7tUg&nd=1"></a>
-      <a class="apple-music" href="https://music.apple.com/us/artist/trag-c/1586506120"></a>
-      <a class="soundcloud" href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></a>
+<body class="artist-background">
+  <header class="artist-header">
+    <a href="../index.html" class="home-link">Home</a>
+    <div class="header-icons">
+      <a href="https://www.youtube.com/@FMTS.ColdStone" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/stolendorf/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://open.spotify.com/artist/5oMYoYyQi5DiRgswSRGF4l" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+      <a href="https://music.apple.com/us/artist/coldstone/1578614282" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i></a>
+      <a href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer"><i class="fab fa-soundcloud"></i></a>
     </div>
-  </section>
-  
-  <footer>
-    <!-- ... Footer content ... -->
+  </header>
+
+  <main class="artist-info">
+    <h1 class="artist-title">ColdStone</h1>
+    <p class="artist-roles">FMTS CEO • Beat Producer • Artist</p>
+    <p class="artist-quote">"Take My Soul, I don't need it."</p>
+	<div class="video">
+      <figure>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/DCGuVobdIjA" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </figure>
+  </div>
+  </main>
+
+  <footer class="artist-footer">
+    &copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank" rel="noopener noreferrer">Jordan Leich</a>
   </footer>
 </body>
 </html>
