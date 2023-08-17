@@ -64,12 +64,14 @@ header {
 }
 
 .intro h1 {
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .intro p {
   margin-top: 20px;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .video {
