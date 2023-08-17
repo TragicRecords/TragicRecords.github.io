@@ -1,0 +1,173 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: 'Dancing';
+  src: url(Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+}
+
+/* Header styles */
+header {
+  font-family: Dancing;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* Updated logo styles */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set the text color to white */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and scale */
+}
+
+.logo:hover {
+  color: red; /* Change the color on hover */
+  transform: scale(1.05); /* Add hover effect */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.nav-links li {
+  margin-right: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+/* Intro section styles */
+.intro {
+  padding: 50px 0;
+}
+
+.intro h1 {
+  font-size: 40px;
+}
+
+.intro p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.video {
+  margin-top: 30px;
+}
+
+.cta-button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+/* Footer link hover effect */
+.social-links a:hover {
+  color: red; /* Change the color on hover */
+}
+
+/* Navigation link hover effect */
+.nav-links a:hover {
+  color: red;
+  transform: scale(1.05);
+}
+
+/* Background video styles */
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  .nav-links li {
+    margin-right: 15px;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .social-links li {
+    margin: 0 10px;
+  }
+}
