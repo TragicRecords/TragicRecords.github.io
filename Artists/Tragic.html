@@ -2,105 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="icon" href="Assets/Logos/Logo1.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tragic - Artist</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    /* Additional styles specific to this page */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif; /* Use a sleek font */
-    }
-    .artist-background {
-      background-image: url("Assets/Images/Tragic.png"); /* Set the background image */
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    .artist-header {
-      background-color: rgba(0, 0, 0, 0.5);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100; /* Ensure the header is above the background */
-    }
-    .home-link {
-      color: white;
-      text-decoration: none;
-      font-size: 24px;
-      font-weight: bold;
-      margin-right: auto; /* Push home link to top left */
-    }
-    .header-icons {
-      color: white;
-      font-size: 24px;
-      display: flex;
-      align-items: center;
-    }
-    .header-icons a {
-      margin-right: 30px; /* Add spacing between icons */
-    }
-    .artist-info {
-      text-align: center;
-      padding: 200px 0 50px;
-      color: white;
-    }
-    .artist-title {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .artist-roles {
-      font-size: 18px;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-    .artist-quote {
-      font-style: italic;
-      font-weight: normal;
-    }
-    .artist-footer {
-      background-color: rgba(0, 0, 0, 0.5);
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 10px 0;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-      font-weight: normal;
-    }
-  </style>
+  <link rel="stylesheet" href="../Styles/style.css"> <!-- Link to your external stylesheet -->
+  <link rel="shortcut icon" type="icon" href="../Assets/Logos/Tragic.jpg">
+  <title>Tragic - Artist</title>
 </head>
 <body class="artist-background">
-  <div class="artist-header">
+  <header class="artist-header">
     <a href="../index.html" class="home-link">Home</a>
     <div class="header-icons">
-      <a href="https://www.youtube.com/channel/UCRVnUjZaG08JzBlvMxjq7VA" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com/mindsotragic/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://open.spotify.com/artist/14u2HBia7beSu0gM7KjBJv?si=JZwqb5QVQAOsOW-Eix7tUg&nd=1" target="_blank"><i class="fab fa-spotify"></i></a>
-      <a href="https://music.apple.com/us/artist/trag-c/1586506120" target="_blank"><i class="fab fa-apple"></i></a>
-      <a href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://www.youtube.com/channel/UCRVnUjZaG08JzBlvMxjq7VA" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/mindsotragic/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://open.spotify.com/artist/14u2HBia7beSu0gM7KjBJv?si=JZwqb5QVQAOsOW-Eix7tUg&nd=1" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+      <a href="https://music.apple.com/us/artist/trag-c/1586506120" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i></a>
+      <a href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer"><i class="fab fa-soundcloud"></i></a>
     </div>
-  </div>
+  </header>
 
-  <div class="artist-info">
-    <div class="artist-title">Tragic</div>
-    <div class="artist-roles">Tragic Records CEO / Vocal Engineer / Artist</div>
-    <div class="artist-quote">"Trust me, life gets better!"</div>
+  <main class="artist-info">
+    <h1 class="artist-title">Tragic</h1>
+    <p class="artist-roles">Tragic Records CEO / Vocal Engineer / Artist</p>
+    <p class="artist-quote">"Trust me, life gets better!"</p>
+	<div class="video">
+      <figure>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Bho2tLpNpQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </figure>
   </div>
+  </main>
 
-  <div class="artist-footer">
-    &copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich
-  </div>
+  <footer class="artist-footer">
+    &copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank" rel="noopener noreferrer">Jordan Leich</a>
+  </footer>
 </body>
 </html>

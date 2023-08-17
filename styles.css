@@ -20,7 +20,7 @@ body {
 header {
   font-family: Dancing;
   font-size: 30px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
   color: white;
   padding: 10px 0;
   text-align: left;
@@ -90,7 +90,7 @@ header {
 
 /* Footer styles */
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
   color: white;
   padding: 20px 0;
   text-align: center;
