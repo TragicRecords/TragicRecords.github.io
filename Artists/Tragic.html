@@ -2,90 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="icon" href="Assets/Logos/Logo1.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tragic - Artist Page</title>
-  <link rel="stylesheet" href="../styles.css">
+  <title>Tragic - Artist</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    /* Reset margin and padding for the whole page */
+    /* Additional styles specific to this page */
     body {
       margin: 0;
       padding: 0;
+      font-family: 'Arial', sans-serif; /* Use a sleek font */
     }
-
-    /* Rest of your styles ... */
-
-    body {
-      background-image: url('../Assets/Images/Tragic.png');
-      background-size: cover; /* Scale the background image to cover the entire page */
-      background-repeat: no-repeat;
-      background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    .artist-background {
+      background-image: url("Assets/Images/Tragic.png"); /* Set the background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
-
-    .artist {
-      /* Your artist section styles ... */
-      position: relative;
-      z-index: 1;
+    .artist-header {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100; /* Ensure the header is above the background */
     }
-
-    .social-icons {
-      margin-top: 10px;
+    .home-link {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: auto; /* Push home link to top left */
     }
-
-    .social-icons a {
-      display: inline-block;
-      width: 70px; /* Set the width for all icons */
-      height: 70px; /* Set the height for all icons */
-      margin-right: 20px; /* Adjust spacing between icons */
-      background-repeat: no-repeat;
-      background-size: contain;
+    .header-icons {
+      color: white;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
     }
-
-    /* Adjust the background images for each icon */
-    .social-icons a.youtube {
-      background-image: url("../Assets/Logos/youtube.png");
+    .header-icons a {
+      margin-right: 30px; /* Add spacing between icons */
     }
-
-    .social-icons a.instagram {
-      background-image: url("../Assets/Logos/instagram.png");
+    .artist-info {
+      text-align: center;
+      padding: 200px 0 50px;
+      color: white;
     }
-
-    .social-icons a.spotify {
-      background-image: url("../Assets/Logos/Spotify.png");
+    .artist-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-
-    .social-icons a.apple-music {
-      background-image: url("../Assets/Logos/Apple Music.png");
+    .artist-roles {
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 20px;
     }
-
-    .social-icons a.soundcloud {
-      background-image: url("../Assets/Logos/SoundCloud.png");
+    .artist-quote {
+      font-style: italic;
+      font-weight: normal;
     }
-
+    .artist-footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-weight: normal;
+    }
   </style>
 </head>
-<body>
-
-  <header>
-	<a href="../index.html">Back to Homepage</a>
-</section>
-  </header>
-  
-  <section class="artist">
-    <h1>Tragic</h1>
-    <p class="description">Tragic Records CEO • Vocal Engineer • Artist</p>
-    <p class="description">"Trust me life gets better!"</p>
-    
-    <div class="social-icons">
-      <a class="youtube" href="https://www.youtube.com/channel/UCRVnUjZaG08JzBlvMxjq7VA"></a>
-      <a class="instagram" href="https://www.instagram.com/mindsotragic/?igshid=YmMyMTA2M2Y%3D"></a>
-      <a class="spotify" href="https://open.spotify.com/artist/14u2HBia7beSu0gM7KjBJv?si=JZwqb5QVQAOsOW-Eix7tUg&nd=1"></a>
-      <a class="apple-music" href="https://music.apple.com/us/artist/trag-c/1586506120"></a>
-      <a class="soundcloud" href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></a>
+<body class="artist-background">
+  <div class="artist-header">
+    <a href="../index.html" class="home-link">Home</a>
+    <div class="header-icons">
+      <a href="https://www.youtube.com/channel/UCRVnUjZaG08JzBlvMxjq7VA" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/mindsotragic/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://open.spotify.com/artist/14u2HBia7beSu0gM7KjBJv?si=JZwqb5QVQAOsOW-Eix7tUg&nd=1" target="_blank"><i class="fab fa-spotify"></i></a>
+      <a href="https://music.apple.com/us/artist/trag-c/1586506120" target="_blank"><i class="fab fa-apple"></i></a>
+      <a href="https://soundcloud.com/mindsotragic?ref=clipboard&p=i&c=1&si=92E12A08D07B4F8AA7D3E6687BDECB1E&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><i class="fab fa-soundcloud"></i></a>
     </div>
-  </section>
-  
-  <footer>
-    <!-- ... Footer content ... -->
-  </footer>
+  </div>
+
+  <div class="artist-info">
+    <div class="artist-title">Tragic</div>
+    <div class="artist-roles">Tragic Records CEO / Vocal Engineer / Artist</div>
+    <div class="artist-quote">"Trust me, life gets better!"</div>
+  </div>
+
+  <div class="artist-footer">
+    &copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich
+  </div>
 </body>
 </html>
