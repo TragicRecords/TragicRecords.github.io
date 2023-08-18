@@ -2,42 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="icon" href="Assets/Logos/Logo1.png"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Styles/Contact-style.css"> <!-- Link to your external stylesheet -->
+  <script src="Scripts/Contact-script.js"></script> <!-- Include your JavaScript file -->
+  <link rel="shortcut icon" type="icon" href="Assets/Logos/Logo1.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="description" content="Contact Tragic Records for inquiries and feedback.">
+  <title>Contact Us</title>
 </head>
-<body>
+<body class="artist-background">
   <header>
-    <nav>
-      <div class="logo">Tragic Records LLC</div>
-      <ul class="nav-links">
-        <li><a href="Artists/Tragic.html">Tragic</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html" class="logo">Tragic Records</a>
+    <ul class="nav-links">
+      <li><a href="Artists/Tragic.html">Tragic</a></li>
+      <li><a href="Artists/ColdStone.html">ColdStone</a></li>
+      <li><a href="Artists/Jacquelyn.html">Jacquelyn</a></li>
+    </ul>
+  </nav>
+</header>
   
   <section class="contact">
     <h1>Contact Us</h1>
     <p>If you have any inquiries, feel free to reach out to us. We'd love to hear from you!</p>
     
-    <form action="send_email.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-      
-      <button type="submit">Submit</button>
-      
-      <!-- Hidden fields to identify the form fields when sending POST request -->
-      <input type="hidden" name="form_name" value="contact">
-    </form>
+<form action="send_email.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="2" required></textarea> <!-- Reduced the number of rows -->
+  
+  <button type="submit">Submit</button>
+  
+  <!-- Hidden fields to identify the form fields when sending POST request -->
+  <input type="hidden" name="form_name" value="contact">
+</form>
+
   </section>
   
 <footer>

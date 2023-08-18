@@ -1,3 +1,9 @@
+/* Custom Font */
+@font-face {
+  font-family: 'Dancing';
+  src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+}
+
 /* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
@@ -36,9 +42,10 @@ body {
 }
 
 .home-link {
+	font-family: Dancing;
+    font-size: 30px;
     color: white;
     text-decoration: none;
-    font-size: 24px;
     font-weight: bold;
     margin-right: auto; /* Push home link to top left */
     transition: color 0.3s; /* Add transition effect */

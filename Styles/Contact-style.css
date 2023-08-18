@@ -1,0 +1,253 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: 'Dancing';
+  src: url(Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+}
+
+/* Header styles */
+header {
+  font-family: Dancing;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
+  color: white;
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* Updated logo styles */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set the text color to white */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and scale */
+}
+
+.logo:hover {
+  color: purple; /* Change the color on hover */
+  transform: scale(1.05); /* Add hover effect */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+/* Intro section styles */
+.intro {
+  padding: 50px 0;
+}
+
+.intro h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.intro p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.video {
+  margin-top: 30px;
+}
+
+/* Styles for the background image and overall layout */
+.artist-background {
+    background-image: url("../Assets/Images/grad4.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.cta-button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex; /* Display the icons in a row */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white; /* Set the icon color to white */
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.social-links a i {
+  margin-right: 10px;
+}
+
+/* Footer link hover effect */
+.social-links a:hover {
+  color: purple; /* Change the icon color to purple on hover */
+  opacity: 0.7;
+}
+
+/* Navigation link hover effect */
+.nav-links a:hover {
+  color: purple;
+  transform: scale(1.05);
+}
+
+/* Background video styles */
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  .nav-links li {
+    margin-right: 15px;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .social-links li {
+    margin: 0 10px;
+  }
+}
+
+/* Contact form styling */
+.contact form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Adjust label width and text alignment */
+.contact label {
+  display: inline-block;
+  width: 100px; /* Adjust the width as needed */
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Adjust input and textarea width */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 300px; /* Set a maximum width */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Adjust button width */
+.contact button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: purple;
+}
+
+/* Form validation and feedback */
+.contact input:invalid,
+.contact textarea:invalid {
+  border-color: red;
+}
+
+.contact input:valid,
+.contact textarea:valid {
+  border-color: #ccc;
+}
+
+.contact input:invalid:focus,
+.contact textarea:invalid:focus {
+  outline: none;
+}
