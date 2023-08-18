@@ -6,14 +6,13 @@ body, h1, h2, h3, p, ul, li {
 
 /* Basic styling */
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
 }
 
 /* Custom Font */
 @font-face {
   font-family: 'Dancing';
-  src: url(Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+  src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
 }
 
 /* Header styles */
@@ -140,19 +139,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Background video styles */
-.background-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  opacity: 0.5;
-}
-
 /* Media query for screens up to 768px */
 @media (max-width: 768px) {
   header {
@@ -190,64 +176,48 @@ footer {
   }
 }
 
-/* Contact form styling */
-.contact form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust label width and text alignment */
-.contact label {
-  display: inline-block;
-  width: 100px; /* Adjust the width as needed */
-  text-align: center;
-  margin-top: 10px;
+.container p {
+    margin-bottom: 50px; /* Add margin to create space between the paragraph and labels */
+}
+
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
   font-weight: bold;
 }
 
-/* Adjust input and textarea width */
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 300px; /* Set a maximum width */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-/* Adjust button width */
-.contact button[type="submit"] {
-  margin-top: 20px;
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 20px;
-  font-size: 18px;
-  background-color: black;
-  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.contact button[type="submit"]:hover {
-  background-color: purple;
-}
-
-/* Form validation and feedback */
-.contact input:invalid,
-.contact textarea:invalid {
-  border-color: red;
-}
-
-.contact input:valid,
-.contact textarea:valid {
-  border-color: #ccc;
-}
-
-.contact input:invalid:focus,
-.contact textarea:invalid:focus {
-  outline: none;
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
