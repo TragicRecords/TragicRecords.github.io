@@ -19,6 +19,13 @@ body {
   margin-top: 30px;
 }
 
+.logo-image {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+	margin-top: 20px; /* Add spacing/padding to the bottom */
+}
+
 /* Styles for the background image and overall layout */
 .artist-background {
     background-image: url("../Assets/Images/grad2.jpg");
