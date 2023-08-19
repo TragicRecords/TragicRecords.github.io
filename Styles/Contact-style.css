@@ -19,10 +19,11 @@ body {
 header {
   font-family: Dancing;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
+  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
   color: white;
   padding: 10px 0;
   text-align: left;
+  margin-bottom: 75px;
 }
 
 /* Updated logo styles */
@@ -97,10 +98,10 @@ header {
 
 /* Footer styles */
 footer {
-  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
   color: white;
   padding: 20px 0;
-  text-align: center;
 }
 
 .social-links {
@@ -137,43 +138,6 @@ footer {
 .nav-links a:hover {
   color: purple;
   transform: scale(1.05);
-}
-
-/* Media query for screens up to 768px */
-@media (max-width: 768px) {
-  header {
-    font-size: 24px;
-    padding: 10px;
-  }
-
-  .logo {
-    font-size: 36px;
-    margin-left: 10px;
-  }
-
-  .nav-links li {
-    margin-right: 15px;
-  }
-
-  .intro h1 {
-    font-size: 30px;
-  }
-
-  .intro p {
-    font-size: 16px;
-  }
-
-  .cta-button {
-    font-size: 16px;
-  }
-
-  footer {
-    padding: 10px;
-  }
-
-  .social-links li {
-    margin: 0 10px;
-  }
 }
 
 .container {
@@ -220,4 +184,57 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5px; /* Reduce header padding */
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 30px; /* Decrease logo font size */
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0 5px; /* Reduce margin between nav links */
+  }
+
+  .nav-links a {
+    padding: 10px 0px; /* Adjust nav link padding */
+    font-size: 16px; /* Decrease nav link font size */
+  }
+
+  .intro h1 {
+    font-size: 22px; /* Decrease intro section header font size */
+  }
+
+  .intro p {
+    font-size: 16px; /* Decrease intro section paragraph font size */
+  }
+  
+  .video iframe {
+    width: 100%; /* Make the video iframe responsive */
+    height: auto;
+  }
+
+  footer {
+    padding: 10px; /* Reduce footer padding */
+    font-size: 10px;
+    margin-top: 250px;
+  }
+
+  .social-links li {
+    margin: 0 10px; /* Reduce margin between social icons */
+  }
+
+  .social-links a {
+    font-size: 20px; /* Decrease social icon font size */
+  }
 }

@@ -6,13 +6,13 @@
 
 /* Reset some default styles */
 body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Apply a default font family */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .video {
@@ -20,9 +20,9 @@ body {
 }
 
 .logo-image {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
+  max-width: 200px; /* Adjust the maximum width as needed */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 	margin-top: 20px; /* Add spacing/padding to the bottom */
 }
 
@@ -36,79 +36,127 @@ body {
 
 /* Styles for the header */
 .artist-header {
-    background-color: rgba(0, 0, 0, 0.0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100; /* Ensure the header is above the background */
+  background-color: rgba(0, 0, 0, 0.0);
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; /* Ensure the header is above the background */
+  margin-left: 20px;
 }
 
 .home-link {
-	font-family: Dancing;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: auto; /* Push home link to top left */
-    transition: color 0.3s; /* Add transition effect */
+  font-family: Dancing;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: auto; /* Push home link to top left */
+  transition: color 0.3s; /* Add transition effect */
 }
 
 .home-link:hover {
-    color: purple; /* Change color on hover */
+  color: purple; /* Change color on hover */
 }
 
 .header-icons a {
-    color: white;
-    font-size: 24px;
-    margin-right: 30px; /* Add spacing between icons */
-    text-decoration: none;
-    transition: color 0.3s; /* Add transition effect */
+  color: white;
+  font-size: 24px;
+  margin-right: 30px; /* Add spacing between icons */
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition effect */
 }
 
 .header-icons a:hover {
-    color: purple; /* Change color on hover */
+  color: purple; /* Change color on hover */
 }
 
 /* Styles for the artist information section */
 .artist-info {
-    text-align: center;
-    padding: 200px 0 50px;
-    color: white;
+  text-align: center;
+  padding: 200px 0 50px;
+  color: white;
 }
 
 .artist-title {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .artist-roles {
-    font-size: 25px;
-    font-weight: normal;
-    margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .artist-quote {
 	font-size: 15px;
-    font-style: italic;
-    font-weight: normal;
+  font-style: italic;
+  font-weight: normal;
 }
 
 /* Styles for the footer */
 .artist-footer {
-    background-color: rgba(0, 0, 0, 0.0);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    font-weight: normal;
+  position: relative;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    header {
+      padding: 5px; /* Reduce header padding */
+      text-align: center;
+    }
+  
+    .artist-header {
+      font-size: 10px; /* Decrease logo font size */
+      text-align: center;
+    }
+  
+    .nav-links {
+      justify-content: center;
+    }
+  
+    .nav-links li {
+      margin: 0 5px; /* Reduce margin between nav links */
+    }
+  
+    .nav-links a {
+      padding: 10px 0px; /* Adjust nav link padding */
+      font-size: 16px; /* Decrease nav link font size */
+    }
+  
+    .intro h1 {
+      font-size: 22px; /* Decrease intro section header font size */
+    }
+  
+    .intro p {
+      font-size: 16px; /* Decrease intro section paragraph font size */
+    }
+    
+    .video iframe {
+      width: 100%; /* Make the video iframe responsive */
+      height: auto;
+    }
+  
+    footer {
+      padding: 10px; /* Reduce footer padding */
+      font-size: 10px;
+    }
+  
+    .social-links li {
+      margin: 0 10px; /* Reduce margin between social icons */
+    }
+  
+    .social-links a {
+      font-size: 20px; /* Decrease social icon font size */
+    }
 }
