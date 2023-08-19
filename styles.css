@@ -95,7 +95,7 @@ header {
 
 /* Footer styles */
 footer {
-  margin-top: 25px;
+  margin-top: 125px;
   background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
   color: white;
   padding: 20px 0;
@@ -192,7 +192,7 @@ footer {
   footer {
     padding: 10px; /* Reduce footer padding */
     font-size: 10px;
-    margin-top: 250px;
+    margin-top: 275px;
   }
 
   .social-links li {
