@@ -52,10 +52,15 @@ header {
   margin-right: 0px;
 }
 
+/* Styles for navigation links */
 .nav-links a {
   text-decoration: none;
   color: white;
-  transition: color 0.3s ease; /* Add a smooth transition for color change */
+  display: inline-block;
+  padding: 10px 20px; /* Adjust this for spacing */
+  min-width: 48px;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
 /* Intro section styles */
