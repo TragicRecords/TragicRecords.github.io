@@ -50,10 +50,11 @@ header {
 /* Style the dropdown menu items */
 .dropdown-menu li a {
   display: block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-decoration: none;
   color: black;
   transition: color 0.3s ease;
+  font-size: 25px;
 }
 
 /* Add hover effect to dropdown menu items */
@@ -97,7 +98,7 @@ header {
 
 /* Intro section styles */
 .intro {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .intro h1 {
@@ -222,5 +223,14 @@ footer {
 
   .social-links a {
     font-size: 20px; /* Decrease social icon font size */
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-size: 15px;
   }
 }

@@ -26,6 +26,43 @@ header {
   margin-bottom: 75px;
 }
 
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the dropdown link */
+.dropdown-link {
+  position: relative;
+  padding: 10px 20px;
+}
+
+/* Style the dropdown menu items */
+.dropdown-menu li a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-size: 25px;
+}
+
+/* Add hover effect to dropdown menu items */
+.dropdown-menu li a:hover {
+  color: purple;
+}
+
 /* Updated logo styles */
 .logo {
   font-size: 40px;
@@ -226,5 +263,14 @@ button[type="submit"]:hover {
 
   .social-links a {
     font-size: 20px; /* Decrease social icon font size */
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 15px;
   }
 }
