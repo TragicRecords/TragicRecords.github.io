@@ -40,6 +40,7 @@ header {
   color: purple; /* Change the color on hover */
   transform: scale(1.05); /* Add hover effect */
 }
+
 /* Styles for the background image and overall layout */
 .artist-background {
     background-image: url("../Assets/Images/grad1.jpeg");

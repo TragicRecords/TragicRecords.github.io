@@ -1,0 +1,143 @@
+/* Custom Font */
+@font-face {
+  font-family: 'Dancing';
+  src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+}
+
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  font-family: Dancing;
+  font-size: 30px;
+  color: white;
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* Styles for the background image and overall layout */
+.artist-background {
+  background-image: url("../Assets/Images/grad2.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.event h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.event p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 125px;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex; /* Display the icons in a row */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white; /* Set the icon color to white */
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.social-links a i {
+  margin-right: 10px;
+}
+
+/* Footer link hover effect */
+.social-links a:hover {
+  color: purple; /* Change the icon color to purple on hover */
+  opacity: 0.7;
+}
+
+/* Navigation link hover effect */
+.nav-links a:hover {
+  color: purple;
+  transform: scale(1.05);
+}

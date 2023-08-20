@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="Assets/Logos/Logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragic Records Events</title>
+    <link rel="stylesheet" href="Styles/Event-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="artist-background">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tragic Records</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="event">
+            <h2>Upcoming Events</h2>
+            <p>Date: </p>
+            <p>Location: </p>
+            <p>Description: </p>
+            <p>Ticket Price: </p>
+            <p>Artists: </p>
+            <a href="ticket-link">Get Tickets</a>
+        </div>
+
+        <div class="reviews">
+            <h3>Event Reviews</h3>
+            <div class="review">
+                <p>"Outstanding event! Great music and atmosphere. Can't wait for the next one!"</p>
+                <p>Posted by Jeffery Lakes via Facebook</p>
+            </div>
+        </div>
+
+        <div id="event-calendar"></div>
+
+        <!-- Countdown Timer -->
+        <div id="countdown">
+            <h2>Countdown to Next Event</h2>
+            <div id="timer"></div>
+        </div>
+    </div>
+
+    <!-- Include FullCalendar JavaScript and CSS -->
+    <link rel="stylesheet" href="fullcalendar.min.css">
+    <script src="fullcalendar.min.js"></script>
+    
+    <script>
+        // Countdown Timer JavaScript
+        const eventDate = new Date('').getTime(); // Replace with your event date
+        const now = new Date().getTime();
+        const timeRemaining = eventDate - now;
+
+        function updateTimer() {
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById('timer').innerHTML = `
+                <div>${days} <span>days</span></div>
+                <div>${hours} <span>hours</span></div>
+                <div>${minutes} <span>minutes</span></div>
+            `;
+
+            if (timeRemaining < 0) {
+                clearInterval(timerInterval);
+                document.getElementById('timer').innerHTML = "Event has started!";
+            }
+
+            timeRemaining -= 1000;
+        }
+
+        updateTimer();
+        const timerInterval = setInterval(updateTimer, 1000);
+    </script>
+
+<footer>
+    <ul class="social-links">
+      <li><a href="https://www.youtube.com/@TragicRecordsOfficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.tiktok.com/@tragic.records" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.facebook.com/Tragic.Records" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+    <p>&copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a></p>
+</footer>
+</body>
+</html>
