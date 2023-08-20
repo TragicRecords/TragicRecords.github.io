@@ -13,15 +13,14 @@ body {
 /* Custom Font */
 @font-face {
   font-family: 'Dancing';
-  src: url(Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+  src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
 }
 
 /* Header styles */
 header {
   font-family: Dancing;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
-  color: white;
+  color: black;
   padding: 10px 0;
   text-align: left;
 }
@@ -32,7 +31,7 @@ header {
   font-weight: bold;
   margin-left: 20px;
   text-decoration: none; /* Remove underline */
-  color: white; /* Set the text color to white */
+  color: black; /* Set the text color to black */
   transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and scale */
 }
 
@@ -44,8 +43,6 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
 }
 
 .nav-links li {
@@ -55,17 +52,16 @@ header {
 /* Styles for navigation links */
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   display: inline-block;
   padding: 10px 20px; /* Adjust this for spacing */
   min-width: 48px;
-  text-align: center;
   transition: color 0.3s ease;
 }
 
 /* Intro section styles */
 .intro {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .intro h1 {
@@ -83,21 +79,10 @@ header {
   margin-top: 30px;
 }
 
-.cta-button {
-  margin-top: 40px;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
 /* Footer styles */
 footer {
   margin-top: 125px;
-  background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent background */
-  color: white;
+  color: black;
   padding: 20px 0;
   text-align: center;
 }
@@ -115,7 +100,7 @@ footer {
 
 .social-links a {
   text-decoration: none;
-  color: white; /* Set the icon color to white */
+  color: black; /* Set the icon color to black */
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
