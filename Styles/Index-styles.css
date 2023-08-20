@@ -183,6 +183,7 @@ footer {
   .logo {
     font-size: 30px; /* Decrease logo font size */
     text-align: center;
+    margin-right: 20px;
   }
 
   .nav-links {
