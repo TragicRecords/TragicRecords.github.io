@@ -175,6 +175,12 @@ footer {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  .background-video {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+  }
+
   header {
     padding: 5px; /* Reduce header padding */
     text-align: center;
@@ -215,7 +221,7 @@ footer {
   footer {
     padding: 10px; /* Reduce footer padding */
     font-size: 10px;
-    margin-top: 275px;
+    margin-top: 25px;
   }
 
   .social-links li {
