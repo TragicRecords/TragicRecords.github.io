@@ -6,13 +6,14 @@
 
 /* Reset some default styles */
 body, h1, h2, h3, p {
+  font-family: 'Dancing';
   margin: 0;
   padding: 0;
 }
 
 /* Apply a default font family */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Dancing';
 }
 
 /* Styles for the background image and overall layout */
@@ -47,6 +48,10 @@ body {
 
 .home-link:hover {
   color: purple; /* Change color on hover */
+}
+
+.view-all-link {
+  font-family: Dancing;
 }
 
 .header-icons a {

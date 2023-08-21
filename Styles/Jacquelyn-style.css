@@ -80,18 +80,21 @@ body {
 }
 
 .artist-title {
+  font-family: 'Dancing';
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .artist-roles {
+  font-family: 'Dancing';
   font-size: 25px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
 .artist-quote {
+  font-family: 'Dancing';
 	font-size: 15px;
   font-style: italic;
   font-weight: normal;

@@ -102,13 +102,15 @@ header {
 }
 
 .intro h1 {
-  font-size: 40px;
+  font-family: 'Dancing';
+  font-size: 50px;
   font-weight: bold;
 }
 
 .intro p {
+  font-family: 'Dancing';
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
 }
 
