@@ -4,24 +4,30 @@
   src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
 }
 
-/* Reset default styles */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
 /* Header styles */
 header {
   font-family: Dancing;
   font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
   color: white;
   padding: 10px 0;
   text-align: left;
+  margin-bottom: 75px;
+}
+
+/* Updated logo styles */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set the text color to white */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and scale */
+}
+
+.logo:hover {
+  color: purple; /* Change the color on hover */
+  transform: scale(1.05); /* Add hover effect */
 }
 
 /* Styles for the background image and overall layout */
@@ -30,25 +36,6 @@ header {
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-top: 10px;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
 }
 
 .container {
@@ -140,4 +127,24 @@ footer {
 .nav-links a:hover {
   color: purple;
   transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5px; /* Reduce header padding */
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 30px; /* Decrease logo font size */
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  footer {
+    padding: 10px; /* Reduce footer padding */
+    font-size: 10px;
+    margin-top: 250px;
+  }
 }
