@@ -12,7 +12,7 @@ body {
 /* Custom Font */
 @font-face {
   font-family: 'Dancing';
-  src: url(../Assets/Fonts/Dancing/DancingScript-VariableFont_wght.ttf);
+  src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
 /* Header styles */
@@ -43,7 +43,7 @@ header {
 
 /* Styles for the background image and overall layout */
 .artist-background {
-    background-image: url("../Assets/Images/grad1.jpeg");
+    background-image: url("../Assets/Images/BlackSmoke.png");
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -51,6 +51,7 @@ header {
 
 /* Footer styles */
 footer {
+  font-family: 'Dancing';
   margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
   color: white;
