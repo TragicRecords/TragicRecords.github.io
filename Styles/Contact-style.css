@@ -136,6 +136,12 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+.g-recaptcha {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   header {

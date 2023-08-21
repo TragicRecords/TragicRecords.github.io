@@ -50,8 +50,7 @@ header {
 /* Style the dropdown menu items */
 .dropdown-menu li a {
   display: block;
-  padding: 5px 20px;
-  text-decoration: none;
+  padding-top: 5px;
   color: black;
   transition: color 0.3s ease;
   font-size: 25px;
@@ -238,9 +237,7 @@ footer {
   .dropdown-menu li a {
     display: block;
     padding: 3px;
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
+    padding-left: 0px;
     font-size: 15px;
   }
 }
