@@ -105,13 +105,14 @@ body {
 .artist-footer {
   font-family: 'Dancing';
   position: relative;
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.0);
   padding: 10px 0;
   text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
 /* Mobile Styles */

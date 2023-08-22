@@ -49,7 +49,7 @@ body {
 .home-link {
   font-family: Dancing;
   font-size: 40px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   margin-right: auto; /* Push home link to top left */
@@ -61,7 +61,7 @@ body {
 }
 
 .header-icons a {
-  color: white;
+  color: black;
   font-size: 24px;
   margin-right: 30px; /* Add spacing between icons */
   text-decoration: none;
@@ -76,26 +76,26 @@ body {
 .artist-info {
   text-align: center;
   padding: 200px 0 50px;
-  color: white;
+  color: black;
 }
 
 .artist-title {
   font-family: 'Dancing';
   font-size: 50px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 10px;
 }
 
 .artist-roles {
   font-family: 'Dancing';
-  font-size: 25px;
+  font-size: 30px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
 .artist-quote {
   font-family: 'Dancing';
-	font-size: 15px;
+	font-size: 30px;
   font-style: italic;
   font-weight: normal;
 }
@@ -109,8 +109,9 @@ body {
   padding: 10px 0;
   text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
 /* Mobile Styles */
@@ -119,7 +120,7 @@ body {
     .home-link {
       font-family: Dancing;
       font-size: 20px;
-      color: white;
+      color: black;
       font-weight: bold;
       transition: color 0.3s; /* Add transition effect */
     }
@@ -148,7 +149,6 @@ body {
     }
 
     .header-icons a {
-      color: white;
       font-size: 15px;
       margin-right: 30px; /* Add spacing between icons */
       text-decoration: none;

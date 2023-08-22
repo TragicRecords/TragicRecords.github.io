@@ -77,25 +77,26 @@
     text-align: center;
     padding: 200px 0 50px;
     color: white;
+    -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
   }
   
   .artist-title {
     font-family: 'Dancing';
     font-size: 50px;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 10px;
   }
   
   .artist-roles {
     font-family: 'Dancing';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: normal;
     margin-bottom: 20px;
   }
   
   .artist-quote {
     font-family: 'Dancing';
-      font-size: 15px;
+    font-size: 30px;
     font-style: italic;
     font-weight: normal;
   }
@@ -109,8 +110,9 @@
     padding: 10px 0;
     text-align: center;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: normal;
+    -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
   }
   
   /* Mobile Styles */
