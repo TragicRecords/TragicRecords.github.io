@@ -155,9 +155,19 @@ button[type="submit"]:hover {
     margin-right: 20px;
   }
 
+  .social-links {
+    text-align: center; /* Center the list horizontally */
+  }
+  
+  .social-links li {
+    display: inline-block; /* Make list items appear in a horizontal line */
+    margin: 0 10px; /* Add margin around each social icon */
+  }
+  
+
   footer {
     padding: 10px; /* Reduce footer padding */
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 250px;
   }
 }

@@ -108,7 +108,7 @@ footer {
 
 .social-links a {
   text-decoration: none;
-  color: white; /* Set the icon color to white */
+  color: white; /* Set the icon color to black */
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
@@ -144,9 +144,19 @@ footer {
     margin-right: 20px;
   }
 
+  .social-links {
+    text-align: center; /* Center the list horizontally */
+  }
+  
+  .social-links li {
+    display: inline-block; /* Make list items appear in a horizontal line */
+    margin: 0 10px; /* Add margin around each social icon */
+  }
+  
+
   footer {
     padding: 10px; /* Reduce footer padding */
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 250px;
   }
 }
