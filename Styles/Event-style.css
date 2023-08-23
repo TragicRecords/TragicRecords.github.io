@@ -10,7 +10,6 @@ header {
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
   color: white;
-  padding: 10px 0;
   text-align: left;
   margin-bottom: 75px;
 }
@@ -61,15 +60,6 @@ header {
 
 .event p {
   margin: 10px 0;
-}
-
-.social-icons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
 }
 
 .reviews {
@@ -134,7 +124,7 @@ footer {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   header {
-    padding: 5px; /* Reduce header padding */
+    padding: 10px; /* Reduce header padding */
     text-align: center;
   }
 
@@ -153,7 +143,6 @@ footer {
     margin: 0 10px; /* Add margin around each social icon */
   }
   
-
   footer {
     padding: 10px; /* Reduce footer padding */
     font-size: 13px;

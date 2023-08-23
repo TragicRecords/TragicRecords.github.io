@@ -117,12 +117,18 @@ body {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-
     .home-link {
-      font-family: Dancing;
-      font-size: 20px;
+      font-size: 25px;
       color: white;
       font-weight: bold;
+      transition: color 0.3s; /* Add transition effect */
+    }
+
+    .header-icons a {
+      color: white;
+      font-size: 18px;
+      padding: auto;
+      margin-right: 0px; /* Add spacing between icons */
       transition: color 0.3s; /* Add transition effect */
     }
 
@@ -130,7 +136,20 @@ body {
       font-size: 20px; /* Decrease logo font size */
       text-align: center;
     }
-  
+
+    .artist-info {
+      color: white;
+      -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
+    }
+    
+    .artist-roles {
+      font-size: 28px;
+    }
+    
+    .artist-quote {
+      font-size: 28px;
+    }
+
     .nav-links {
       justify-content: center;
     }
@@ -147,14 +166,6 @@ body {
     .video iframe {
       width: 100%; /* Make the video iframe responsive */
       height: auto;
-    }
-
-    .header-icons a {
-      color: white;
-      font-size: 15px;
-      margin-right: 30px; /* Add spacing between icons */
-      text-decoration: none;
-      transition: color 0.3s; /* Add transition effect */
     }
   
     .artist-footer {

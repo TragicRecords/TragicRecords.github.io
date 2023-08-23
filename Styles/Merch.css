@@ -118,7 +118,7 @@ body {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
     .home-link {
-      font-size: 30px; /* Decrease logo font size */
+      font-size: 40px; /* Decrease logo font size */
       text-align: center;
       margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
       display: block; /* Make it a block-level element to center it horizontally */
@@ -129,7 +129,7 @@ body {
     }
 
     .artist-title {
-      font-size: 40px; /* Decrease logo font size */
+      font-size: 30px; /* Decrease logo font size */
       text-align: center;
     }
   
