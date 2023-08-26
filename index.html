@@ -47,9 +47,35 @@
 <section class="intro">
 	<h1>Welcome to Tragic Records LLC</h1>
     <p>Your source for top-notch music production, vocal engineering, instrumentals, and music entertainment.</p>
-
 </section>
-  
+
+<div id="latest-video"></div>
+<script>
+const API_KEY = 'AIzaSyD08rQRhd54J5rBxwpzHwU0Bhl1Eoh19Gk';
+const CHANNEL_ID = 'UC7BPsELv1OlC2bzPE8W_agA';
+const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video`;
+
+function embedLatestVideo() {
+  fetch(API_URL)
+    .then(response => response.json())
+    .then(data => {
+      // Filter out Shorts based on video duration
+      const nonShorts = data.items.filter(item => item.id.kind === 'youtube#video');
+
+      if (nonShorts.length > 0) {
+        const latestVideoId = nonShorts[0].id.videoId;
+        const embedHtml = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
+        document.getElementById('latest-video').innerHTML = embedHtml;
+      } else {
+        document.getElementById('latest-video').innerHTML = "No eligible videos found.";
+      }
+    })
+    .catch(error => console.error(error));
+}
+
+window.addEventListener('load', embedLatestVideo);
+</script>
+
 <footer>
   <ul class="social-links">
     <li><a href="https://www.youtube.com/@TragicRecordsOfficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
