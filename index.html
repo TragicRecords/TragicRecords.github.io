@@ -51,7 +51,7 @@
 
 <div id="latest-video"></div>
 <script>
-const API_KEY = 'AIzaSyD08rQRhd54J5rBxwpzHwU0Bhl1Eoh19Gk';
+const API_KEY = 'AIzaSyAaSk_IrLSHOXvZeUj0dX3luPIucNOVPb4';
 const CHANNEL_ID = 'UC7BPsELv1OlC2bzPE8W_agA';
 const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video`;
 
@@ -64,7 +64,7 @@ function embedLatestVideo() {
 
       if (nonShorts.length > 0) {
         const latestVideoId = nonShorts[0].id.videoId;
-        const embedHtml = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
+        const embedHtml = `<iframe src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
         document.getElementById('latest-video').innerHTML = embedHtml;
       } else {
         document.getElementById('latest-video').innerHTML = "No eligible videos found.";
