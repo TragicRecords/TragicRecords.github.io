@@ -167,7 +167,10 @@
       
       .video iframe {
         width: 100%; /* Make the video iframe responsive */
-        height: auto;
+      }
+  
+      .spotify-embed iframe {
+        width: 100%; /* Make the video iframe responsive */
       }
     
       .artist-footer {
