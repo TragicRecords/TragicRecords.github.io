@@ -1,86 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="icon" href="Assets/Logos/TragicRecords.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="icon"
+      href="Assets/Logos/TragicRecords.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tragic Records Events</title>
-    <link rel="stylesheet" href="Styles/Event-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body class="artist-background">
+    <link rel="stylesheet" href="Styles/Event-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body class="artist-background">
     <header>
-        <nav>
-            <a href="index.html" class="logo">Tragic Records</a>
-        </nav>
+      <nav>
+        <a href="index.html" class="logo">Tragic Records</a>
+      </nav>
     </header>
 
     <div class="container">
-        <div class="event">
-            <h2>Upcoming Events</h2>
-            <p>Date: </p>
-            <p>Location: </p>
-            <p>Description: </p>
-            <p>Ticket Price: </p>
-            <p>Artists: </p>
-            <a>Get Tickets</a>
-        </div>
+      <div class="event">
+        <h2>Upcoming Events</h2>
+        <p>Event: FMTS End of Summer Bash 2023</p>
+        <p>Date: September 30th, 2023</p>
+        Location:
+        <a
+          href="https://www.shelbytwp.org/government/departments/parks-and-recreation/river-bends-park-247"
+          target="_blank"
+          >River Bends Park</a
+        >
+        <p>
+          Description: There will be a talent show competition & cypher style
+          rap battle, both will have cash prizes!
+        </p>
+        <p>
+          Price: $10 Entree for all attendees will get a food ticket. Groups of
+          3 or more will be $7 each.
+        </p>
+        <p>
+          Artists: <a href="Artists/Tragic.html">Tragic</a> -
+          <a href="Artists/ColdStone.html">ColdStone</a> -
+          <a href="Artists/JAK!.html">JAK!</a> -
+          <a href="Artists/Jerr.ie.html">Jerr.ie</a>
+        </p>
+        <a>RSVP Link</a>
+      </div>
 
-        <div class="reviews">
-            <h3>Event Reviews</h3>
-            <div class="review">
-                <p>"Outstanding event! Great music and atmosphere. Can't wait for the next one!"</p>
-                <p>Posted by Jeffery Lakes via Facebook</p>
-            </div>
+      <div class="event-videos">
+        <h3>Previous Events</h3>
+        <div class="event-videos">
+          <p>Add previous event videos here</p>
         </div>
+      </div>
 
-        <div id="event-calendar"></div>
-
-        <!-- Countdown Timer -->
-        <div id="countdown">
-            <h2>Countdown to Next Event</h2>
-            <div id="timer"></div>
+      <div class="reviews">
+        <h3>Event Reviews</h3>
+        <div class="review">
+          <p>
+            "Outstanding event! Great music and atmosphere. Can't wait for the
+            next one!"
+          </p>
+          <p>Posted by Jeffery Lakes via Facebook</p>
         </div>
+      </div>
+
+      <div id="event-calendar"></div>
+
+      <!-- Countdown Timer -->
+      <div id="countdown">
+        <h2>Countdown to Next Event</h2>
+        <div id="timer"></div>
+      </div>
     </div>
-    
+
     <script>
-        // Countdown Timer JavaScript
-        const eventDate = new Date('').getTime(); // Replace with your event date
-        const now = new Date().getTime();
-        const timeRemaining = eventDate - now;
+      // Countdown Timer JavaScript
+      const eventDate = new Date("9/30/23").getTime(); // Replace with your event date
+      const now = new Date().getTime();
+      let timeRemaining = eventDate - now;
 
-        function updateTimer() {
-            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      function updateTimer() {
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            document.getElementById('timer').innerHTML = `
-                <div>${days} <span>days</span></div>
-                <div>${hours} <span>hours</span></div>
-                <div>${minutes} <span>minutes</span></div>
-            `;
+        document.getElementById("timer").innerHTML = `
+            <div>${days} <span>days</span> ${hours} <span>hours</span> ${minutes} <span>minutes</span> ${seconds} <span>seconds</span></div>
+          `;
 
-            if (timeRemaining < 0) {
-                clearInterval(timerInterval);
-                document.getElementById('timer').innerHTML = "Event has started!";
-            }
-
-            timeRemaining -= 1000;
+        if (timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          document.getElementById("timer").innerHTML = "Event has started!";
         }
 
-        updateTimer();
-        const timerInterval = setInterval(updateTimer, 1000);
+        timeRemaining -= 1000;
+      }
+
+      updateTimer();
+      const timerInterval = setInterval(updateTimer, 1000);
     </script>
 
-<footer>
-    <ul class="social-links">
-      <li><a href="https://www.youtube.com/@TragicRecordsOfficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
-      <li><a href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.tiktok.com/@tragic.records" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-      <li><a href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-      <li><a href="https://www.facebook.com/Tragic.Records" target="_blank"><i class="fab fa-facebook"></i></a></li>
-    </ul>
-    <p>&copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a></p>
-</footer>
-</body>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://www.youtube.com/@TragicRecordsOfficial"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@tragic.records" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw"
+            target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Tragic.Records" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2023 Tragic Records LLC. All rights reserved. Designed by
+        <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a>
+      </p>
+    </footer>
+  </body>
 </html>

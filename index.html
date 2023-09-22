@@ -1,90 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="icon" href="Assets/Logos/TragicRecords.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tragic Records LLC - Your source for top-notch music production, vocal engineering, instrumentals, and music entertainment.">
-  <meta name="keywords" content="music production, vocal engineering, instrumentals, music entertainment, Tragic Records">
-  <title>Tragic Records</title>
-  <link rel="stylesheet" href="Styles/Index-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-	<video class="background-video" autoplay loop muted playsinline>
-		<source src="Assets/Videos/BGVideo.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="icon"
+      href="Assets/Logos/TragicRecords.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tragic Records LLC - Your source for top-notch music production, vocal engineering, instrumentals, and music entertainment."
+    />
+    <meta
+      name="keywords"
+      content="music production, vocal engineering, instrumentals, music entertainment, Tragic Records"
+    />
+    <title>Tragic Records</title>
+    <link rel="stylesheet" href="Styles/Index-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video class="background-video" autoplay loop muted playsinline>
+      <source src="Assets/Videos/BGVideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-<header>
-  <nav>
-    <a href="/" class="logo">Tragic Records</a>
-    <ul class="nav-links">
-      <li class="dropdown">
-        <a class="dropdown-link">Artists</a>
-        <ul class="dropdown-menu">
-          <li><a href="Artists/Tragic.html">Tragic</a></li>
-          <li><a href="Artists/ColdStone.html">ColdStone</a></li>
-          <li><a href="Artists/Jacquelyn.html">Jacquelyn</a></li>
-          <li><a href="Artists/JAK!.html">JAK!</a></li>
-          <li><a href="Artists/Jerr.ie.html">Jerr.ie</a></li>
-          <li><a href="Artists/J-Apollo.html">J-Apollo</a></li>
+    <header>
+      <nav>
+        <a href="/" class="logo">Tragic Records</a>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a class="dropdown-link">Artists</a>
+            <ul class="dropdown-menu">
+              <li><a href="Artists/Tragic.html">Tragic</a></li>
+              <li><a href="Artists/ColdStone.html">ColdStone</a></li>
+              <li><a href="Artists/Jacquelyn.html">Jacquelyn</a></li>
+              <li><a href="Artists/JAK!.html">JAK!</a></li>
+              <li><a href="Artists/Jerr.ie.html">Jerr.ie</a></li>
+              <li><a href="Artists/J-Apollo.html">J-Apollo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-link">Brand</a>
+            <ul class="dropdown-menu">
+              <li><a href="Brands/FMTS-Brand.html">FMTS</a></li>
+              <li><a href="Brands/Merch.html">Merch</a></li>
+            </ul>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-link">Brand</a>
-        <ul class="dropdown-menu">
-          <li><a href="Brands/FMTS-Brand.html">FMTS</a></li>
-          <li><a href="Brands/Merch.html">Merch</a></li>
-        </ul>
-      </li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>    
-  </nav>
-</header>
-  
-<section class="intro">
-	<h1>Welcome to Tragic Records LLC</h1>
-    <p>Your source for top-notch music production, vocal engineering, instrumentals, and music entertainment.</p>
-</section>
+      </nav>
+    </header>
 
-<div id="latest-video"></div>
-<script>
-const API_KEY = 'AIzaSyAaSk_IrLSHOXvZeUj0dX3luPIucNOVPb4';
-const CHANNEL_ID = 'UC7BPsELv1OlC2bzPE8W_agA';
-const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video`;
+    <section class="intro">
+      <h1>Welcome to Tragic Records LLC</h1>
+      <p>
+        Your source for top-notch music production, vocal engineering,
+        instrumentals, and music entertainment.
+      </p>
+    </section>
 
-function embedLatestVideo() {
-  fetch(API_URL)
-    .then(response => response.json())
-    .then(data => {
-      // Filter out Shorts based on video duration
-      const nonShorts = data.items.filter(item => item.id.kind === 'youtube#video');
+    <div id="latest-video"></div>
+    <script>
+      const API_KEY = "AIzaSyAaSk_IrLSHOXvZeUj0dX3luPIucNOVPb4";
+      const CHANNEL_ID = "UC7BPsELv1OlC2bzPE8W_agA";
+      const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video`;
 
-      if (nonShorts.length > 0) {
-        const latestVideoId = nonShorts[0].id.videoId;
-        const embedHtml = `<iframe src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
-        document.getElementById('latest-video').innerHTML = embedHtml;
-      } else {
-        document.getElementById('latest-video').innerHTML = "No eligible videos found.";
+      function embedLatestVideo() {
+        fetch(API_URL)
+          .then((response) => response.json())
+          .then((data) => {
+            // Filter out Shorts based on video duration
+            const nonShorts = data.items.filter(
+              (item) => item.id.kind === "youtube#video"
+            );
+
+            if (nonShorts.length > 0) {
+              const latestVideoId = nonShorts[0].id.videoId;
+              const embedHtml = `<iframe src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
+              document.getElementById("latest-video").innerHTML = embedHtml;
+            } else {
+              document.getElementById("latest-video").innerHTML =
+                "No eligible videos found.";
+            }
+          })
+          .catch((error) => console.error(error));
       }
-    })
-    .catch(error => console.error(error));
-}
 
-window.addEventListener('load', embedLatestVideo);
-</script>
+      window.addEventListener("load", embedLatestVideo);
+    </script>
 
-<footer>
-  <ul class="social-links">
-    <li><a href="https://www.youtube.com/@TragicRecordsOfficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
-    <li><a href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.tiktok.com/@tragic.records" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-    <li><a href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-    <li><a href="https://www.facebook.com/Tragic.Records" target="_blank"><i class="fab fa-facebook"></i></a></li>
-  </ul>
-  <p>&copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a></p>
-</footer>
-</body>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://www.youtube.com/@TragicRecordsOfficial"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@tragic.records" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw"
+            target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Tragic.Records" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2023 Tragic Records LLC. All rights reserved. Designed by
+        <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a>
+      </p>
+    </footer>
+  </body>
 </html>
