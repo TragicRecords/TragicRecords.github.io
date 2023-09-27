@@ -1,5 +1,11 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -12,8 +18,8 @@ body {
 
 /* Custom Font */
 @font-face {
-  font-family: 'Dancing';
-  src: url(../Assets/Fonts/BebasNeue.ttf)
+  font-family: "Dancing";
+  src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
 /* Header styles */
@@ -101,13 +107,13 @@ header {
 }
 
 .intro h1 {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   font-size: 50px;
   font-weight: bold;
 }
 
 .intro p {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   margin-top: 20px;
   font-size: 20px;
   font-weight: normal;
@@ -119,7 +125,7 @@ header {
 
 /* Footer styles */
 footer {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   margin-top: 200px;
   color: black;
   padding: 20px 0;
@@ -178,9 +184,13 @@ footer {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .background-video {
-    position: absolute;
+    position: fixed; /* Change from absolute to fixed for full screen coverage */
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%; /* Set the height to 100% for full screen coverage */
     object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other content */
   }
 
   header {
@@ -214,7 +224,7 @@ footer {
   .intro p {
     font-size: 16px; /* Decrease intro section paragraph font size */
   }
-  
+
   .video iframe {
     width: 100%; /* Make the video iframe responsive */
     height: auto;
