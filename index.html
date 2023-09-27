@@ -65,51 +65,14 @@
       </p>
     </section>
 
-    <div id="latest-video"></div>
-    <script>
-      const API_KEY = "AIzaSyAaSk_IrLSHOXvZeUj0dX3luPIucNOVPb4";
-      const CHANNEL_ID = "UC7BPsELv1OlC2bzPE8W_agA";
-      const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video`;
-
-      function embedLatestVideo() {
-        fetch(API_URL)
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.items.length > 0) {
-              const latestVideoId = data.items[0].id.videoId;
-              let embedHtml = "";
-
-              if (window.innerWidth >= 768) {
-                // For desktop screens or screens with a width of 768 pixels or more
-                embedHtml = `<iframe
-            width="600"    <!-- Set desktop width here -->
-            height="400"   <!-- Set desktop height here -->
-            src="https://www.youtube.com/embed/${latestVideoId}"
-            frameborder="1"
-            allowfullscreen
-          ></iframe>`;
-              } else {
-                // For phone screens or screens with a width less than 768 pixels
-                embedHtml = `<iframe
-            width="100%"   <!-- Set phone width here -->
-            height="auto"  <!-- Set phone height here -->
-            src="https://www.youtube.com/embed/${latestVideoId}"
-            frameborder="1"
-            allowfullscreen
-          ></iframe>`;
-              }
-
-              document.getElementById("latest-video").innerHTML = embedHtml;
-            } else {
-              document.getElementById("latest-video").innerHTML =
-                "No eligible videos found.";
-            }
-          })
-          .catch((error) => console.error(error));
-      }
-
-      window.addEventListener("load", embedLatestVideo);
-    </script>
+    <iframe
+      style="width: 300px; height: 150px"
+      src="https://www.youtube.com/embed/buu2L3vwNsE?si=Js-fB_NN3bvyJVB6"
+      title="YouTube video player"
+      frameborder="1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
 
     <footer>
       <ul class="social-links">
