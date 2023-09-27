@@ -75,14 +75,30 @@
         fetch(API_URL)
           .then((response) => response.json())
           .then((data) => {
-            // Filter out Shorts based on video duration
-            const nonShorts = data.items.filter(
-              (item) => item.id.kind === "youtube#video"
-            );
+            if (data.items.length > 0) {
+              const latestVideoId = data.items[0].id.videoId;
+              let embedHtml = "";
 
-            if (nonShorts.length > 0) {
-              const latestVideoId = nonShorts[0].id.videoId;
-              const embedHtml = `<iframe src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
+              if (window.innerWidth >= 768) {
+                // For desktop screens or screens with a width of 768 pixels or more
+                embedHtml = `<iframe
+            width="600"    <!-- Set desktop width here -->
+            height="400"   <!-- Set desktop height here -->
+            src="https://www.youtube.com/embed/${latestVideoId}"
+            frameborder="1"
+            allowfullscreen
+          ></iframe>`;
+              } else {
+                // For phone screens or screens with a width less than 768 pixels
+                embedHtml = `<iframe
+            width="100%"   <!-- Set phone width here -->
+            height="auto"  <!-- Set phone height here -->
+            src="https://www.youtube.com/embed/${latestVideoId}"
+            frameborder="1"
+            allowfullscreen
+          ></iframe>`;
+              }
+
               document.getElementById("latest-video").innerHTML = embedHtml;
             } else {
               document.getElementById("latest-video").innerHTML =
