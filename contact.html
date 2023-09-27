@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Styles/Contact-style.css"> <!-- Link to your external stylesheet -->
-  <link rel="shortcut icon" type="icon" href="Assets/Logos/TragicRecords.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <meta name="description" content="Contact Tragic Records for inquiries and feedback.">
-  <title>Contact Us</title>
-</head>
-<body class="artist-background">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/Contact-style.css" />
+    <!-- Link to your external stylesheet -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Assets/Logos/TragicRecords.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta
+      name="description"
+      content="Contact Tragic Records for inquiries and feedback."
+    />
+    <title>Contact Us</title>
+  </head>
+  <body class="artist-background">
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Tragic Records</a>
+      </nav>
+    </header>
 
-<header>
-  <nav>
-    <a href="index.html" class="logo">Tragic Records</a>
-  </nav>
-</header>
-  
-  <div class="container">
-    <h1>Contact Us</h1>
-	<p>If you have any inquiries, feel free to reach out to us. We'd love to hear from you!</p>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>
+        If you have any inquiries, feel free to reach out to us. We'd love to
+        hear from you!
+      </p>
 
-<form
-  action="https://formspree.io/f/mvojapon"
-  method="POST"
->
-  <label>
-    Name:
-    <input type="name" name="name">
-  </label>
-  <label>
-    Email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Message:
-    <textarea name="message"></textarea>
-  </label>
-  <div class="g-recaptcha" data-sitekey="6LdpzbUnAAAAAJIpCFdpTxxTpWt1H-UOoc7QVwkL"></div>
+      <form action="https://formspree.io/f/mvojapon" method="POST">
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdpzbUnAAAAAJIpCFdpTxxTpWt1H-UOoc7QVwkL"
+        ></div>
 
-  <button type="submit">Submit</button>
-</form>
-</div>
-  
-<footer>
-  <ul class="social-links">
-    <li><a href="https://www.youtube.com/@TragicRecordsOfficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
-    <li><a href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.tiktok.com/@tragic.records" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-	  <li><a href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-    <li><a href="https://www.facebook.com/Tragic.Records" target="_blank"><i class="fab fa-facebook"></i></a></li>
-  </ul>
-  <p>&copy; 2023 Tragic Records LLC. All rights reserved. Designed by <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a></p>
-</footer>
-<script src="Scripts/recaptcha.js"></script>
-</body>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://www.youtube.com/@TragicRecordsOfficial"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/tragic.records/?igshid=MmIzYWVlNDQ5Yg%3D%3D"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@tragic.records" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/tragicrecordss?s=21&t=XQcWIZP3yPx4I91RDddzRw"
+            target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Tragic.Records" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2023 Tragic Records LLC. All rights reserved. Designed by
+        <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a>
+      </p>
+    </footer>
+    <script src="Scripts/recaptcha.js"></script>
+  </body>
 </html>
