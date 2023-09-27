@@ -1,6 +1,6 @@
 /* Custom Font */
 @font-face {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
@@ -8,7 +8,12 @@
 header {
   font-family: Dancing;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
   text-align: left;
   margin-bottom: 75px;
@@ -38,7 +43,7 @@ header {
 }
 
 .container {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -60,6 +65,7 @@ header {
 
 .event p {
   margin: 10px 0;
+  font-size: 16px;
 }
 
 .reviews {
@@ -74,11 +80,12 @@ header {
 
 .review p {
   margin: 0;
+  font-size: 16px;
 }
 
 /* Footer styles */
 footer {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   margin-top: 125px;
   color: white;
   padding: 20px 0;
@@ -137,12 +144,12 @@ footer {
   .social-links {
     text-align: center; /* Center the list horizontally */
   }
-  
+
   .social-links li {
     display: inline-block; /* Make list items appear in a horizontal line */
     margin: 0 10px; /* Add margin around each social icon */
   }
-  
+
   footer {
     padding: 10px; /* Reduce footer padding */
     font-size: 13px;
