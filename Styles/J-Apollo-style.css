@@ -1,189 +1,194 @@
 /* Custom Font */
 @font-face {
-    font-family: 'Dancing';
-    src: url(../Assets/Fonts/BebasNeue.ttf);
-  }
-  
-  /* Reset some default styles */
-  body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply a default font family */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .video {
-    margin-top: 30px;
-  }
-  
-  .logo-image {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-      margin-top: 20px; /* Add spacing/padding to the bottom */
-  }
-  
-  /* Styles for the background image and overall layout */
-  .artist-background {
-    background-image: url("../Assets/Images/J-Apollo\ BG2.png");
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Styles for the header */
-  .artist-header {
-    background-color: rgba(0, 0, 0, 0.0);
-    position: relative;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100; /* Ensure the header is above the background */
-    margin-left: 20px;
-  }
-  
-  .home-link {
-    font-family: Dancing;
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-    margin-right: auto; /* Push home link to top left */
-    transition: color 0.3s; /* Add transition effect */
-    -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
-  }
-  
-  .home-link:hover {
-    color: purple; /* Change color on hover */
-  }
-  
-  .header-icons a {
-    color: white;
-    font-size: 24px;
-    margin-right: 30px; /* Add spacing between icons */
-    text-decoration: none;
-    transition: color 0.3s; /* Add transition effect */
-  }
-  
-  .header-icons a:hover {
-    color: purple; /* Change color on hover */
-  }
-  
-  /* Styles for the artist information section */
-  .artist-info {
-    text-align: center;
-    padding: 200px 0 50px;
-    color: white;
-    -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
-  }
-  
-  .artist-title {
-    font-family: 'Dancing';
-    font-size: 50px;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-  
-  .artist-roles {
-    font-family: 'Dancing';
-    font-size: 30px;
-    font-weight: normal;
-    margin-bottom: 20px;
-  }
-  
-  .artist-quote {
-    font-family: 'Dancing';
-    font-size: 30px;
-    font-style: italic;
-    font-weight: normal;
-  }
-  
-  /* Styles for the footer */
-  .artist-footer {
-    font-family: 'Dancing';
-    position: relative;
-    margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.0);
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: normal;
-    -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
-  }
-  
+  font-family: "Dancing";
+  src: url(../Assets/Fonts/BebasNeue.ttf);
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a default font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.video {
+  margin-top: 30px;
+}
+
+.logo-image {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: 20px; /* Add spacing/padding to the bottom */
+}
+
+/* Styles for the background image and overall layout */
+.artist-background {
+  background-image: url("../Assets/Images/AJ.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the header */
+.artist-header {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; /* Ensure the header is above the background */
+  margin-left: 20px;
+}
+
+.home-link {
+  font-family: Dancing;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  margin-right: auto; /* Push home link to top left */
+  transition: color 0.3s; /* Add transition effect */
+  -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
+}
+
+.home-link:hover {
+  color: purple; /* Change color on hover */
+}
+
+.header-icons a {
+  color: white;
+  font-size: 24px;
+  margin-right: 30px; /* Add spacing between icons */
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition effect */
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
+}
+
+.header-icons a:hover {
+  color: purple; /* Change color on hover */
+}
+
+/* Styles for the artist information section */
+.artist-info {
+  text-align: center;
+  padding: 200px 0 50px;
+  color: white;
+  -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
+}
+
+.artist-title {
+  font-family: "Dancing";
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.artist-roles {
+  font-family: "Dancing";
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.artist-quote {
+  font-family: "Dancing";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Styles for the footer */
+.artist-footer {
+  font-family: "Dancing";
+  position: relative;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-      .home-link {
-        font-size: 25px;
-        color: white;
-        font-weight: normal;
-        transition: color 0.3s; /* Add transition effect */
-        -webkit-text-stroke: 0.5px black; /* For webkit-based browsers like Chrome and Safari */
-      }
-
-      .header-icons a {
-        color: white;
-        font-size: 18px;
-        padding: auto;
-        margin-right: 0px; /* Add spacing between icons */
-        transition: color 0.3s; /* Add transition effect */
-      }
-
-      .artist-header {
-        font-size: 20px; /* Decrease logo font size */
-        text-align: center;
-      }
-
-      .artist-info {
-        color: white;
-        -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
-      }
-      
-      .artist-roles {
-        font-size: 28px;
-      }
-      
-      .artist-quote {
-        font-size: 28px;
-      }
-    
-      .nav-links {
-        justify-content: center;
-      }
-    
-      .nav-links li {
-        margin: 0 5px; /* Reduce margin between nav links */
-      }
-    
-      .nav-links a {
-        padding: 10px 0px; /* Adjust nav link padding */
-        font-size: 16px; /* Decrease nav link font size */
-      }
-      
-      .video iframe {
-        width: 100%; /* Make the video iframe responsive */
-      }
-  
-      .spotify-embed iframe {
-        width: 100%; /* Make the video iframe responsive */
-      }
-    
-      .artist-footer {
-        margin-top: 75px;
-        padding: 10px; /* Reduce footer padding */
-        font-size: 15px;
-      }
-    
-      .social-links li {
-        margin: 0 10px; /* Reduce margin between social icons */
-      }
-    
-      .social-links a {
-        font-size: 20px; /* Decrease social icon font size */
-      }
+  .home-link {
+    font-size: 25px;
+    color: white;
+    font-weight: normal;
+    transition: color 0.3s; /* Add transition effect */
+    -webkit-text-stroke: 0.5px black; /* For webkit-based browsers like Chrome and Safari */
   }
+
+  .header-icons a {
+    color: white;
+    font-size: 18px;
+    padding: auto;
+    margin-right: 0px; /* Add spacing between icons */
+    transition: color 0.3s; /* Add transition effect */
+  }
+
+  .artist-header {
+    font-size: 20px; /* Decrease logo font size */
+    text-align: center;
+  }
+
+  .artist-info {
+    color: white;
+    -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
+  }
+
+  .artist-roles {
+    font-size: 28px;
+  }
+
+  .artist-quote {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0 5px; /* Reduce margin between nav links */
+  }
+
+  .nav-links a {
+    padding: 10px 0px; /* Adjust nav link padding */
+    font-size: 16px; /* Decrease nav link font size */
+  }
+
+  .video iframe {
+    width: 100%; /* Make the video iframe responsive */
+  }
+
+  .spotify-embed iframe {
+    width: 100%; /* Make the video iframe responsive */
+  }
+
+  .artist-footer {
+    margin-top: 75px;
+    padding: 10px; /* Reduce footer padding */
+    font-size: 15px;
+  }
+
+  .social-links li {
+    margin: 0 10px; /* Reduce margin between social icons */
+  }
+
+  .social-links a {
+    font-size: 20px; /* Decrease social icon font size */
+  }
+}

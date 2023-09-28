@@ -1,32 +1,36 @@
 /* Custom Font */
 @font-face {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
 /* Reset some default styles */
-body, h1, h2, h3, p {
-  font-family: 'Dancing';
+body,
+h1,
+h2,
+h3,
+p {
+  font-family: "Dancing";
   margin: 0;
   padding: 0;
 }
 
 /* Apply a default font family */
 body {
-  font-family: 'Dancing';
+  font-family: "Dancing";
 }
 
 /* Styles for the background image and overall layout */
 .artist-background {
-    background-image: url("../Assets/Images/BlackSmoke.png");
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
+  background-image: url("../Assets/Images/BlackSmoke.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
 }
 
 /* Styles for the header */
 .artist-header {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
   padding: 20px;
   display: flex;
@@ -103,10 +107,10 @@ body {
 
 /* Styles for the footer */
 .artist-footer {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   position: relative;
   margin-top: 25px;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   padding: 10px 0;
   text-align: center;
   color: white;
@@ -117,46 +121,46 @@ body {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    .home-link {
-      font-size: 40px; /* Decrease logo font size */
-      text-align: center;
-      margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
-      display: block; /* Make it a block-level element to center it horizontally */
-    }
+  .home-link {
+    font-size: 40px; /* Decrease logo font size */
+    text-align: center;
+    margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+    display: block; /* Make it a block-level element to center it horizontally */
+  }
 
-    .artist-header {
-      margin-right: 20px;
-    }
+  .artist-header {
+    margin-right: 20px;
+  }
 
-    .artist-title {
-      font-size: 30px; /* Decrease logo font size */
-      text-align: center;
-    }
-  
-    .nav-links {
-      justify-content: center;
-    }
-  
-    .nav-links li {
-      margin: 0 5px; /* Reduce margin between nav links */
-    }
-  
-    .nav-links a {
-      padding: 10px 0px; /* Adjust nav link padding */
-      font-size: 16px; /* Decrease nav link font size */
-    }
+  .artist-title {
+    font-size: 30px; /* Decrease logo font size */
+    text-align: center;
+  }
 
-    .header-icons a {
-      color: white;
-      font-size: 15px;
-      margin-right: 30px; /* Add spacing between icons */
-      text-decoration: none;
-      transition: color 0.3s; /* Add transition effect */
-    }
-  
-    .artist-footer {
-      margin-top: 75px;
-      padding: 10px; /* Reduce footer padding */
-      font-size: 15px;
-    }
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0 5px; /* Reduce margin between nav links */
+  }
+
+  .nav-links a {
+    padding: 10px 0px; /* Adjust nav link padding */
+    font-size: 16px; /* Decrease nav link font size */
+  }
+
+  .header-icons a {
+    color: white;
+    font-size: 15px;
+    margin-right: 30px; /* Add spacing between icons */
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition effect */
+  }
+
+  .artist-footer {
+    margin-top: 75px;
+    padding: 10px; /* Reduce footer padding */
+    font-size: 15px;
+  }
 }

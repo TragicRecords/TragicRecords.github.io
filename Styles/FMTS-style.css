@@ -87,17 +87,9 @@ body {
   -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
-.artist-roles {
-  font-family: Dancing;
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 20px;
-  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
-}
-
 .artist-quote {
   font-family: 'Dancing';
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
   font-weight: normal;
   -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
