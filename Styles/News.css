@@ -1,127 +1,84 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  text-align: center;
+}
+
 /* Custom Font */
 @font-face {
   font-family: "Dancing";
   src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
-/* Reset some default styles */
-body,
-h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-.header {
+/* Header styles */
+header {
   font-family: Dancing;
-  font-size: 40px;
+  font-size: 30px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
+  padding: 10px 0;
   text-align: left;
   margin-bottom: 75px;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
+/* Updated logo styles */
+.logo {
+  font-size: 40px;
   font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set the text color to white */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and scale */
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blog {
-  max-width: 600px;
-  margin: 20px auto; /* Center the blog section */
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.blog-post {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.date {
-  color: #999;
-  font-style: italic;
+.logo:hover {
+  color: purple; /* Change the color on hover */
+  transform: scale(1.05); /* Add hover effect */
 }
 
 /* Styles for the background image and overall layout */
-.background {
+.artist-background {
   background-image: url("../Assets/Images/RedSmoke.png");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
 }
 
-/* Styles for the header */
-.header-top-left {
+/* Footer styles */
+footer {
   font-family: "Dancing";
-  font-size: 40px;
+  margin-top: 100px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header-top-left:hover {
-  color: purple;
-  transform: scale(1.05);
-}
-
-/* Styles for the footer */
-.footer {
-  font-family: "Dancing";
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 20px; /* Adjust the margin-top to reduce space between social links and footer */
+  padding: 20px 0;
 }
 
 .social-links {
-  padding-top: 100px;
   list-style: none;
-  display: flex;
+  display: flex; /* Display the icons in a row */
   justify-content: center;
-  margin-bottom: 0; /* Remove or reduce the margin-bottom for social links */
+  margin-bottom: 20px;
 }
 
 .social-links li {
@@ -147,36 +104,78 @@ h2 {
   opacity: 0.7;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
+.container {
+  font-family: "Dancing";
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.container p {
+  margin-bottom: 50px; /* Add margin to create space between the paragraph and labels */
 }
 
-/* Stick the footer to the very bottom */
-html,
-body {
-  height: 100%;
+/* Blog styles */
+.blog {
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the blog section horizontally */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Add a semi-transparent white background */
+  border-radius: 10px; /* Add rounded corners to the blog section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Center the header link on small screens */
+.blog-post {
+  margin-bottom: 30px; /* Add space between blog posts */
+  padding: 20px;
+  background-color: #fff; /* White background for individual blog posts */
+  border-radius: 5px; /* Add rounded corners to blog posts */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-post .date {
+  color: #999;
+  font-style: italic;
+}
+
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .header {
+  header {
+    padding: 10px; /* Reduce header padding */
     text-align: center;
   }
 
-  /* For mobile screens, remove the top-left positioning */
-  .header-top-left {
-    margin: 0;
+  .logo {
+    font-size: 30px; /* Decrease logo font size */
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .social-links {
+    text-align: center; /* Center the list horizontally */
+  }
+
+  .social-links li {
+    display: inline-block; /* Make list items appear in a horizontal line */
+    margin: 0 10px; /* Add margin around each social icon */
+  }
+
+  footer {
+    padding: 10px; /* Reduce footer padding */
+    font-size: 13px;
+    margin-top: 250px;
   }
 }

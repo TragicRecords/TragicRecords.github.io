@@ -1,5 +1,11 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -11,7 +17,7 @@ body {
 
 /* Custom Font */
 @font-face {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   src: url(../Assets/Fonts/BebasNeue.ttf);
 }
 
@@ -19,7 +25,12 @@ body {
 header {
   font-family: Dancing;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
   padding: 10px 0;
   text-align: left;
@@ -43,17 +54,22 @@ header {
 
 /* Styles for the background image and overall layout */
 .artist-background {
-    background-image: url("../Assets/Images/PurpleSmoke.png");
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
+  background-image: url("../Assets/Images/PurpleSmoke.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
 }
 
 /* Footer styles */
 footer {
-  font-family: 'Dancing';
+  font-family: "Dancing";
   margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.0); /* Use rgba to set a transparent background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
   padding: 20px 0;
 }
@@ -89,19 +105,18 @@ footer {
 }
 
 .container {
-    font-family: 'Dancing';
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Dancing";
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container p {
-    margin-bottom: 50px; /* Add margin to create space between the paragraph and labels */
+  margin-bottom: 50px; /* Add margin to create space between the paragraph and labels */
 }
-
 
 form {
   display: grid;
@@ -158,12 +173,11 @@ button[type="submit"]:hover {
   .social-links {
     text-align: center; /* Center the list horizontally */
   }
-  
+
   .social-links li {
     display: inline-block; /* Make list items appear in a horizontal line */
     margin: 0 10px; /* Add margin around each social icon */
   }
-  
 
   footer {
     padding: 10px; /* Reduce footer padding */

@@ -83,20 +83,28 @@ header {
   font-size: 16px;
 }
 
-/* Footer styles */
-footer {
-  font-family: "Dancing";
-  margin-top: 125px;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
+/* Social links centering */
 .social-links {
   list-style: none;
-  display: flex; /* Display the icons in a row */
-  justify-content: center;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  height: 100%; /* Ensure the container takes up the full height */
+}
+
+/* Remove margin from social links li elements */
+.social-links li {
+  margin: 0;
+}
+
+/* Footer centering */
+footer {
+  font-family: "Dancing";
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 20px 0;
+  text-align: center; /* Center the text content horizontally */
 }
 
 .social-links li {
@@ -105,7 +113,7 @@ footer {
 
 .social-links a {
   text-decoration: none;
-  color: white; /* Set the icon color to black */
+  color: white; /* Set the icon color to white */
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
