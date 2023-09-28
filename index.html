@@ -17,6 +17,7 @@
       content="music production, vocal engineering, instrumentals, music entertainment, Tragic Records"
     />
     <title>Tragic Records</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="Styles/Index-style.css" />
     <link
       rel="stylesheet"
@@ -125,5 +126,28 @@
         <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a>
       </p>
     </footer>
+    <script>
+      // Wait for the document to be ready
+      $(document).ready(function () {
+        // Add a click event handler to dropdown links
+        $(".dropdown-link").on("click", function (e) {
+          e.preventDefault(); // Prevent the default link behavior
+          var $dropdownMenu = $(this).next(".dropdown-menu");
+
+          // Toggle the dropdown menu's visibility
+          $dropdownMenu.toggleClass("active");
+
+          // Close other open dropdowns
+          $(".dropdown-menu").not($dropdownMenu).removeClass("active");
+        });
+
+        // Close dropdowns when clicking outside of them
+        $(document).on("click", function (e) {
+          if (!$(e.target).closest(".dropdown").length) {
+            $(".dropdown-menu").removeClass("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
