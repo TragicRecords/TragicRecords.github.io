@@ -1,40 +1,141 @@
-/* Apply basic styles to the entire page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Reset default styles for more elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+button,
+input {
   margin: 0;
   padding: 0;
+}
+
+/* Basic styling */
+body {
+  text-align: center;
+  min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "Dancing";
+  src: url(../Assets/Fonts/BebasNeue.ttf);
+}
+
+/* Header styles */
+header {
+  font-family: Dancing;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+/* Updated logo styles */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  color: purple;
+  transform: scale(1.05);
+}
+
+/* Styles for the background image and overall layout */
+.artist-background {
+  background-image: url("../Assets/Images/BlackSmoke.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  flex-grow: 1; /* Allow content to expand to fill remaining space */
+}
+
+/* Footer styles */
+footer {
+  font-family: "Dancing";
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.social-links {
+  list-style: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 350px;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s ease;
+  display: flex;
   align-items: center;
-  height: 100vh;
+  font-size: 24px;
+}
+
+.social-links a i {
+  margin-right: 10px;
+}
+
+/* Footer link hover effect */
+.social-links a:hover {
+  color: purple;
+  opacity: 0.7;
 }
 
 .container {
-  text-align: center;
+  font-family: "Dancing";
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: white;
+  color: red;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 36px;
-  color: red; /* Custom color for the heading */
-}
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
 
-p {
-  font-size: 18px;
-  color: #333;
-  margin: 10px 0;
-}
+  .logo {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+  }
 
-a {
-  color: purple; /* Custom color for links */
-  text-decoration: none;
-  font-weight: bold;
-}
+  .social-links {
+    text-align: center;
+  }
 
-a:hover {
-  text-decoration: underline;
+  .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 13px;
+  }
 }
