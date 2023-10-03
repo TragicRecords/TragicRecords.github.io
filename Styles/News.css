@@ -120,6 +120,8 @@ footer {
 
 /* Blog styles */
 .blog {
+  font-family: "Dancing";
+  font-size: 25px;
   max-width: 600px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the blog section horizontally */
   padding: 20px;
@@ -142,13 +144,22 @@ footer {
 }
 
 .blog-post h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .blog-post .date {
   color: #999;
   font-style: italic;
+}
+
+.image-container {
+  text-align: center; /* Center-align the content horizontally */
+}
+
+.image-container img {
+  display: block; /* Make the image a block-level element to center it */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 /* Mobile Styles */
