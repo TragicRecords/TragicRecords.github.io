@@ -44,11 +44,22 @@ function fadeInOnScroll() {
   }
 }
 
+function fadeInOnScrollCatalog() {
+  var element = document.querySelector(".fade-on-scroll-catalog");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
 // Wait for the document to be ready
 document.addEventListener("DOMContentLoaded", function () {
   fadeInOnLoad(); // Call the function for page load transitions
 
   window.addEventListener("scroll", function () {
     fadeInOnScroll(); // Call the function for scroll transitions
+  });
+
+  window.addEventListener("scroll", function () {
+    fadeInOnScrollCatalog();
   });
 });

@@ -28,6 +28,12 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
+/* Add CSS for scrolling transition here */
+.fade-on-scroll-catalog {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 /* Custom Font */
 @font-face {
   font-family: "Dancing";
