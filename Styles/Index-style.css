@@ -16,6 +16,18 @@ body {
   text-align: center;
 }
 
+/* Add the CSS for transitions here */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Add CSS for scrolling transition here */
+.fade-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 /* Custom Font */
 @font-face {
   font-family: "Dancing";
@@ -126,7 +138,7 @@ header {
   font-weight: normal;
 }
 
-.catalog-playlist {
+.catalog {
   font-family: "Dancing";
   margin-top: 100px;
   font-size: 20px;
@@ -213,7 +225,7 @@ footer {
   }
 
   .logo {
-    font-size: 30px; /* Decrease logo font size */
+    font-size: 40px; /* Decrease logo font size */
     text-align: center;
     margin-right: 20px;
   }
@@ -228,15 +240,15 @@ footer {
 
   .nav-links a {
     padding: 10px 0px; /* Adjust nav link padding */
-    font-size: 16px; /* Decrease nav link font size */
+    font-size: 20px; /* Decrease nav link font size */
   }
 
   .intro h1 {
-    font-size: 22px; /* Decrease intro section header font size */
+    font-size: 30px; /* Decrease intro section header font size */
   }
 
   .intro p {
-    font-size: 16px; /* Decrease intro section paragraph font size */
+    font-size: 20px; /* Decrease intro section paragraph font size */
   }
 
   .video iframe {
@@ -262,6 +274,6 @@ footer {
     display: block;
     padding: 3px;
     padding-left: 0px;
-    font-size: 15px;
+    font-size: 17px;
   }
 }

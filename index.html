@@ -61,7 +61,7 @@
       </nav>
     </header>
 
-    <section class="intro">
+    <section class="intro fade-in">
       <h1>Welcome to Tragic Records LLC</h1>
       <p>
         Your source for top-notch music production, vocal engineering,
@@ -69,25 +69,29 @@
       </p>
     </section>
 
-    <section class="featured-video"><p>Featured Music Video</p></section>
-    <iframe
-      style="width: 300px; height: 150px"
-      src="https://www.youtube.com/embed/buu2L3vwNsE?si=Js-fB_NN3bvyJVB6"
-      title="YouTube video player"
-      frameborder="1"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <section class="featured-video fade-on-scroll">
+      <p>Featured Music Video</p>
+      <iframe
+        style="width: 300px; height: 150px"
+        src="https://www.youtube.com/embed/buu2L3vwNsE?si=Js-fB_NN3bvyJVB6"
+        title="YouTube video player"
+        frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
 
-    <section class="catalog-playlist"><p>Entire Music Catalog</p></section>
-    <iframe
-      style="width: 300px; height: 150px"
-      src="https://www.youtube.com/embed/videoseries?si=k2RiJPE6N_7jMHla&amp;list=PLkLiirSxbp3zS7FTagUPD_tJGiGqvccCU"
-      title="YouTube video player"
-      frameborder="1"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <section class="catalog fade-on-scroll">
+      <p>Entire Music Catalog</p>
+      <iframe
+        style="width: 300px; height: 150px"
+        src="https://www.youtube.com/embed/videoseries?si=k2RiJPE6N_7jMHla&amp;list=PLkLiirSxbp3zS7FTagUPD_tJGiGqvccCU"
+        title="YouTube video player"
+        frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
 
     <footer>
       <ul class="social-links">
@@ -126,28 +130,6 @@
         <a href="https://linktr.ee/jordanleich" target="_blank">Jordan Leich</a>
       </p>
     </footer>
-    <script>
-      // Wait for the document to be ready
-      $(document).ready(function () {
-        // Add a click event handler to dropdown links
-        $(".dropdown-link").on("click", function (e) {
-          e.preventDefault(); // Prevent the default link behavior
-          var $dropdownMenu = $(this).next(".dropdown-menu");
-
-          // Toggle the dropdown menu's visibility
-          $dropdownMenu.toggleClass("active");
-
-          // Close other open dropdowns
-          $(".dropdown-menu").not($dropdownMenu).removeClass("active");
-        });
-
-        // Close dropdowns when clicking outside of them
-        $(document).on("click", function (e) {
-          if (!$(e.target).closest(".dropdown").length) {
-            $(".dropdown-menu").removeClass("active");
-          }
-        });
-      });
-    </script>
+    <script src="Scripts/main.js"></script>
   </body>
 </html>
