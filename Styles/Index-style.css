@@ -16,22 +16,21 @@ body {
   text-align: center;
 }
 
-/* Add the CSS for transitions here */
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
 /* Add CSS for scrolling transition here */
-.fade-on-scroll {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-/* Add CSS for scrolling transition here */
+.fade-in,
+.fade-on-scroll-featured,
 .fade-on-scroll-catalog {
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+.fade-on-scroll-identity,
+.fade-on-scroll-mission {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding for spacing */
 }
 
 /* Custom Font */
@@ -128,6 +127,7 @@ header {
   font-family: "Dancing";
   font-size: 50px;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 .intro p {

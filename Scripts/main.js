@@ -37,8 +37,22 @@ function fadeInOnLoad() {
 }
 
 // Add a function to fade in elements when scrolled into view
-function fadeInOnScroll() {
-  var element = document.querySelector(".fade-on-scroll");
+function fadeInOnScrollFeatured() {
+  var element = document.querySelector(".fade-on-scroll-featured");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScrollIdentity() {
+  var element = document.querySelector(".fade-on-scroll-identity");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScrollMission() {
+  var element = document.querySelector(".fade-on-scroll-mission");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
@@ -56,10 +70,18 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeInOnLoad(); // Call the function for page load transitions
 
   window.addEventListener("scroll", function () {
-    fadeInOnScroll(); // Call the function for scroll transitions
-  });
+    fadeInOnScrollIdentity();
 
-  window.addEventListener("scroll", function () {
-    fadeInOnScrollCatalog();
+    window.addEventListener("scroll", function () {
+      fadeInOnScrollMission();
+
+      window.addEventListener("scroll", function () {
+        fadeInOnScrollFeatured(); // Call the function for scroll transitions
+      });
+
+      window.addEventListener("scroll", function () {
+        fadeInOnScrollCatalog();
+      });
+    });
   });
 });
