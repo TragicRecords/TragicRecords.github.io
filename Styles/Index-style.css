@@ -200,7 +200,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Background video styles */
 .background-video {
   position: fixed;
   top: 0px;
@@ -213,7 +212,6 @@ footer {
   opacity: 0.5;
 }
 
-/* Mobile Styles */
 @media screen and (max-width: 768px) {
   .background-video {
     position: fixed; /* Change from absolute to fixed for full screen coverage */
