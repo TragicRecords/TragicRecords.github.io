@@ -59,11 +59,13 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.event {
+.event,
+.reviews,
+.event-videos,
+.countdown {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  border: 1px solid gray;
 }
 
 .event h2 {
@@ -74,10 +76,6 @@ header {
 .event p {
   margin: 10px 0;
   font-size: 16px;
-}
-
-.reviews {
-  margin-top: 20px;
 }
 
 .review {
