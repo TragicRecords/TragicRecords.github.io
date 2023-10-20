@@ -27,10 +27,22 @@
     />
   </head>
   <body>
-    <video class="background-video" autoplay loop muted playsinline>
-      <source src="Assets/Videos/BGVideo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <video id="background-video" loop>
+  <source src="Assets/Videos/BGVideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<button id="play-button">Play Video</button>
+
+<script>
+  var video = document.getElementById("background-video");
+  var playButton = document.getElementById("play-button");
+  
+  playButton.addEventListener("click", function() {
+    video.play();
+    playButton.style.display = "none";
+  });
+</script>
 
     <header>
       <nav>
