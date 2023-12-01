@@ -213,12 +213,14 @@ footer {
 }
 
 .cookie-banner {
+  font-size: large;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: #fff;
+  opacity: 90%;
+  background-color: black;
+  color: white;
   padding: 10px;
   text-align: center;
   display: none;
@@ -231,7 +233,7 @@ footer {
 
 #accept-cookies,
 #reject-cookies {
-  background-color: #4caf50;
+  background-color: #00ff08;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -240,7 +242,7 @@ footer {
 }
 
 #reject-cookies {
-  background-color: #f44336;
+  background-color: #ff1100;
 }
 
 @media screen and (max-width: 768px) {
