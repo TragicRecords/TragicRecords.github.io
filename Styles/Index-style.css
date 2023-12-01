@@ -212,6 +212,37 @@ footer {
   opacity: 0.5;
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+.cookie-banner p {
+  margin: 0;
+  display: inline-block;
+}
+
+#accept-cookies,
+#reject-cookies {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#reject-cookies {
+  background-color: #f44336;
+}
+
 @media screen and (max-width: 768px) {
   .background-video {
     position: fixed; /* Change from absolute to fixed for full screen coverage */
