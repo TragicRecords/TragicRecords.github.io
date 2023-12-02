@@ -18,14 +18,11 @@ body {
 
 /* Add CSS for scrolling transition here */
 .fade-in,
-.fade-on-scroll-featured,
-.fade-on-scroll-catalog {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade-on-scroll-identity,
-.fade-on-scroll-mission {
+.fade-on-scroll-1,
+.fade-on-scroll-2,
+.fade-on-scroll-3,
+.fade-on-scroll-4,
+.fade-on-scroll-5 {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   max-width: 800px; /* Adjust the maximum width as needed */

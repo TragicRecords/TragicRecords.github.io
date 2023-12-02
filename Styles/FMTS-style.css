@@ -1,7 +1,5 @@
 /* Add CSS for scrolling transition here */
-.fade-in,
-.fade-on-scroll-featured,
-.fade-on-scroll-catalog {
+.fade-in {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
