@@ -9,6 +9,37 @@
   transition: opacity 1s ease-in-out;
 }
 
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+  margin-right: 20px; /* Adjust the spacing between links if needed */
+}
+
+.footer-artists {
+  padding-bottom: 15px;
+}
+
+/* Basic styling */
+body {
+  text-align: left;
+}
+
 /* Custom Font */
 @font-face {
   font-family: "Dancing";
@@ -26,6 +57,7 @@ header {
     0
   ); /* Use rgba to set a transparent background */
   color: white;
+  padding: 10px 0;
   text-align: left;
   margin-bottom: 75px;
 }
@@ -92,28 +124,26 @@ header {
   font-size: 16px;
 }
 
-/* Social links centering */
-.social-links {
-  list-style: none;
-  display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  align-items: center; /* Center the icons vertically */
-  height: 100%; /* Ensure the container takes up the full height */
-}
-
-/* Remove margin from social links li elements */
-.social-links li {
-  margin: 0;
-}
-
-/* Footer centering */
+/* Footer styles */
 footer {
+  text-align: center;
   font-family: "Dancing";
   margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Use rgba to set a transparent background */
   color: white;
   padding: 20px 0;
-  text-align: center; /* Center the text content horizontally */
+}
+
+.social-links {
+  list-style: none;
+  display: flex; /* Display the icons in a row */
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .social-links li {
@@ -137,12 +167,6 @@ footer {
 .social-links a:hover {
   color: purple; /* Change the icon color to purple on hover */
   opacity: 0.7;
-}
-
-/* Navigation link hover effect */
-.nav-links a:hover {
-  color: purple;
-  transform: scale(1.05);
 }
 
 /* Mobile Styles */
