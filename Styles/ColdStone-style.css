@@ -49,6 +49,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.background-video {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.5;
+}
+
 /* Styles for the header */
 .artist-header {
   background-color: rgba(0, 0, 0, 0);
@@ -66,9 +78,10 @@ body {
   font-size: 40px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   margin-right: auto; /* Push home link to top left */
   transition: color 0.3s; /* Add transition effect */
+  -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
 .home-link:hover {
@@ -81,40 +94,49 @@ body {
   margin-right: 30px; /* Add spacing between icons */
   text-decoration: none;
   transition: color 0.3s; /* Add transition effect */
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
 .header-icons a:hover {
   color: purple; /* Change color on hover */
 }
 
-/* Styles for the artist information section */
 .artist-info {
   text-align: center;
   padding: 200px 0 50px;
   color: white;
-  -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
+  -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
+}
+
+.artist-title,
+.artist-roles,
+.artist-quote {
+  font-family: "Dancing";
+  font-weight: normal;
+  transition: color 0.3s; /* Add transition for smooth color change */
 }
 
 .artist-title {
-  font-family: "Dancing";
   font-size: 50px;
-  font-weight: normal;
   margin-bottom: 10px;
 }
 
 .artist-roles {
-  font-family: "Dancing";
   font-size: 40px;
-  font-weight: normal;
   margin-bottom: 20px;
 }
 
 .artist-quote {
-  font-family: "Dancing";
   font-size: 30px;
   font-style: italic;
-  font-weight: normal;
 }
+
+.artist-title:hover,
+.artist-roles:hover,
+.artist-quote:hover {
+  color: purple; /* Change color on hover */
+}
+
 
 /* Styles for the footer */
 .artist-footer {
@@ -132,12 +154,23 @@ body {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  .background-video {
+    position: fixed; /* Change from absolute to fixed for full screen coverage */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to 100% for full screen coverage */
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other content */
+  }
+
   .home-link {
     font-family: Dancing;
     font-size: 25px;
     color: white;
     font-weight: bold;
     transition: color 0.3s; /* Add transition effect */
+    -webkit-text-stroke: 0.5px black; /* For webkit-based browsers like Chrome and Safari */
   }
 
   .artist-header {
@@ -146,11 +179,13 @@ body {
   }
 
   .header-icons a {
+    color: white;
     font-size: 18px;
     margin-right: 0px; /* Add spacing between icons */
     padding: auto;
     text-decoration: none;
     transition: color 0.3s; /* Add transition effect */
+    -webkit-text-stroke: 0.5px black; /* For webkit-based browsers like Chrome and Safari */
   }
 
   .artist-info {
@@ -158,12 +193,25 @@ body {
     -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
   }
 
+  .artist-title {
+    font-family: "Dancing";
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
   .artist-roles {
-    font-size: 28px;
+    font-family: "Dancing";
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
   }
 
   .artist-quote {
-    font-size: 28px;
+    font-family: "Dancing";
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
   }
 
   .nav-links {
@@ -191,6 +239,7 @@ body {
     margin-top: 75px;
     padding: 10px; /* Reduce footer padding */
     font-size: 15px;
+    -webkit-text-stroke: 1px black; /* For webkit-based browsers like Chrome and Safari */
   }
 
   .social-links li {

@@ -43,10 +43,22 @@ body {
 
 /* Styles for the background image and overall layout */
 .artist-background {
-  background-image: url("../Assets/Images/Tragic\ BG2.JPG");
+  background-image: url("../Assets/Images/..");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
+}
+
+.background-video {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 /* Styles for the header */
@@ -89,7 +101,6 @@ body {
   color: purple; /* Change color on hover */
 }
 
-/* Styles for the artist information section */
 .artist-info {
   text-align: center;
   padding: 200px 0 50px;
@@ -97,26 +108,35 @@ body {
   -webkit-text-stroke: 1.5px black; /* For webkit-based browsers like Chrome and Safari */
 }
 
-.artist-title {
+.artist-title,
+.artist-roles,
+.artist-quote {
   font-family: "Dancing";
-  font-size: 50px;
   font-weight: normal;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.artist-title {
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
 .artist-roles {
-  font-family: "Dancing";
   font-size: 40px;
-  font-weight: normal;
   margin-bottom: 20px;
 }
 
 .artist-quote {
-  font-family: "Dancing";
   font-size: 30px;
   font-style: italic;
-  font-weight: normal;
 }
+
+.artist-title:hover,
+.artist-roles:hover,
+.artist-quote:hover {
+  color: purple; /* Change color on hover */
+}
+
 
 /* Styles for the footer */
 .artist-footer {
@@ -134,6 +154,16 @@ body {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  .background-video {
+    position: fixed; /* Change from absolute to fixed for full screen coverage */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to 100% for full screen coverage */
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other content */
+  }
+
   .home-link {
     font-family: Dancing;
     font-size: 25px;
