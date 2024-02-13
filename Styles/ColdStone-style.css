@@ -43,7 +43,7 @@ body {
 
 /* Styles for the background image and overall layout */
 .artist-background {
-  background-image: url("../Assets/Images/ColdStone.png");
+  background-image: url("../Assets/Images/..");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
