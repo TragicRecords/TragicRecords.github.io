@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 function checkForActiveEvent() {
-  var isEventActive = false;
+  var isEventActive = true;
 
   if (isEventActive) {
     alert("There is an upcoming event! Check it out on the Events page.");
