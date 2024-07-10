@@ -18,4 +18,19 @@ $(document).ready(function () {
       $(".dropdown-menu").removeClass("active");
     }
   });
+
+  // Visit counter script
+  if (localStorage.getItem('visitCount')) {
+    // Increment the count by 1
+    localStorage.setItem('visitCount', parseInt(localStorage.getItem('visitCount')) + 1);
+  } else {
+    // If the key doesn't exist, set it to 1 (first visit)
+    localStorage.setItem('visitCount', 1);
+  }
+
+  // Get the visit count from localStorage
+  const visitCount = localStorage.getItem('visitCount');
+
+  // Display the visit count in the HTML element with the id 'visit-counter'
+  $('#visit-counter').text(`This page has been visited ${visitCount} times.`);
 });
