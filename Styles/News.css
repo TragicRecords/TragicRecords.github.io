@@ -215,3 +215,46 @@ footer {
     margin-top: 250px;
   }
 }
+
+.video-container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto; /* Center the video on the page */
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.streaming-links {
+  margin-top: 15px;
+}
+
+.streaming-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.streaming-links li {
+  margin-bottom: 5px;
+}
+
+.streaming-links a {
+  text-decoration: none;
+  color: #007bff; /* Customize link color */
+}
+
+.streaming-links a:hover {
+  text-decoration: underline;
+}
