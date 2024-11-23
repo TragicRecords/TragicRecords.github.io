@@ -95,7 +95,6 @@ header {
   color: purple;
 }
 
-/* Updated logo styles */
 .logo {
   font-size: 40px;
   font-weight: bold;
@@ -119,7 +118,6 @@ header {
   margin-right: 0px;
 }
 
-/* Styles for navigation links */
 .nav-links a {
   text-decoration: none;
   color: black;
@@ -129,7 +127,6 @@ header {
   transition: color 0.3s ease;
 }
 
-/* Intro section styles */
 .intro {
   padding: 150px 0;
 }
@@ -220,7 +217,7 @@ footer {
   width: auto;
   height: auto;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .cookie-banner {
