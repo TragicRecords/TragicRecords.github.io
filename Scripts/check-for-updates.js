@@ -12,7 +12,7 @@ function checkForActiveEvent() {
 }
 
 function checkForRecentNews() {
-  var isRecentNews = true;
+  var isRecentNews = false;
 
   if (isRecentNews) {
     alert("Recent news has been posted! Check it out on the News page.");
