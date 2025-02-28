@@ -50,35 +50,35 @@ function fadeInOnScroll5() {
 }
 
 function fadeInOnScroll6() {
-  var element = document.querySelector(".fade-on-scroll-5");
+  var element = document.querySelector(".fade-on-scroll-6");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
 }
 
 function fadeInOnScroll7() {
-  var element = document.querySelector(".fade-on-scroll-5");
+  var element = document.querySelector(".fade-on-scroll-7");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
 }
 
 function fadeInOnScroll8() {
-  var element = document.querySelector(".fade-on-scroll-5");
+  var element = document.querySelector(".fade-on-scroll-8");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
 }
 
 function fadeInOnScroll9() {
-  var element = document.querySelector(".fade-on-scroll-5");
+  var element = document.querySelector(".fade-on-scroll-9");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
 }
 
 function fadeInOnScroll10() {
-  var element = document.querySelector(".fade-on-scroll-5");
+  var element = document.querySelector(".fade-on-scroll-10");
   if (isScrolledIntoView(element)) {
     element.style.opacity = 1;
   }
