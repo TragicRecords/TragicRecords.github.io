@@ -49,6 +49,41 @@ function fadeInOnScroll5() {
   }
 }
 
+function fadeInOnScroll6() {
+  var element = document.querySelector(".fade-on-scroll-5");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScroll7() {
+  var element = document.querySelector(".fade-on-scroll-5");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScroll8() {
+  var element = document.querySelector(".fade-on-scroll-5");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScroll9() {
+  var element = document.querySelector(".fade-on-scroll-5");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
+function fadeInOnScroll10() {
+  var element = document.querySelector(".fade-on-scroll-5");
+  if (isScrolledIntoView(element)) {
+    element.style.opacity = 1;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   fadeInOnLoad(); // Call the function for page load transitions
 });
@@ -71,4 +106,24 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   fadeInOnScroll5();
+});
+
+window.addEventListener("scroll", function () {
+  fadeInOnScroll6();
+});
+
+window.addEventListener("scroll", function () {
+  fadeInOnScroll7();
+});
+
+window.addEventListener("scroll", function () {
+  fadeInOnScroll8();
+});
+
+window.addEventListener("scroll", function () {
+  fadeInOnScroll9();
+});
+
+window.addEventListener("scroll", function () {
+  fadeInOnScroll10();
 });
