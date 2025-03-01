@@ -30,18 +30,15 @@ body {
   text-align: center;
 }
 
-/* Add CSS for scrolling transition here */
-.fade-in,
-.fade-on-scroll-1,
-.fade-on-scroll-2,
-.fade-on-scroll-3,
-.fade-on-scroll-4,
-.fade-on-scroll-5 {
+.fade-on-scroll {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
-  max-width: 800px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 20px; /* Add some padding for spacing */
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Custom Font */
