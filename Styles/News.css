@@ -1,13 +1,14 @@
-/* Add CSS for scrolling transition here */
-.fade-in,
-.fade-on-scroll-1,
-.fade-on-scroll-2,
-.fade-on-scroll-3,
-.fade-on-scroll-4,
-.fade-on-scroll-5 {
+.fade-on-scroll {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Reset some default styles */
 body,
